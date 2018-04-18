@@ -1,0 +1,2 @@
+class Termino < ApplicationRecord
+end

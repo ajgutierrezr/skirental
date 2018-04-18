@@ -1,0 +1,32 @@
+<div class = "jumbotron" style="background-color: #ffcc66">
+  <p>
+    <strong>Equipo:</strong>
+    <%= @equipo.name %>
+  </p>
+
+  <p>
+    <strong>Detalles:</strong>
+    <%= @equipo.description %>
+  </p>
+
+  <p>
+    <strong>Precio:</strong>
+    <%= @equipo.price %>
+  </p>
+  <p>
+    <strong>Foto:</strong>
+    <%= @equipo.picture %>
+  </p>
+  <% if params[:na].present? %>
+    <p>
+    <%= link_to 'Arrendar', new_arriendo_path(:eq => @equipo.id, :arr => Arriendo.find(params[:na]).id) %>
+    </p>
+  <% else %>
+    <p>
+      <%= link_to 'Arrendar', new_arriendo_path(:eq => @equipo.id) %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to 'Editar', edit_equipo_path(@equipo) %> |
+<%= link_to 'Volver', equipos_path %>

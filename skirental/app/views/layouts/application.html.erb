@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ski Rental</title>
+    <%= csrf_meta_tags %>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap-theme.css">
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-dark navbar-fixed-top" style="background: #428bca" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle"  data-toggle="collapse" data-target=".navbar-collapse" style="background: #428bca">
+          <span class="sr-only" >Toggle navigation</span>
+          <span class="icon-bar" ></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" style="color:#000000" href="/">Ski Rental</a>
+      </div>
+      <div class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li class="active"><a style="color:#000000" href="/equipos">Precios y packs</a></li>
+          <li class="active"><a style="color:#000000" href="/arriendos">Check in</a></li>
+          <li class="active"><a style="color:#000000" href="/informacions">Información</a></li>
+          <li class="active"><a style="color:#000000" href="/contacts/new">Contacto</a></li>
+          <li class="active"><a style="color:#000000" href="/terminos">Terminos y Condiciones</a></li>
+        </ul>
+        <p class="navbar-text pull-right" style="color:#000000">
+          <% if user_signed_in? %>
+            Logged in as <strong><%= current_user.email %></strong>.
+            <%= link_to 'Editar Perfil', edit_user_registration_path, :class => 'navbar-link', :style=>"color:#000000" %> |
+            <%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link', :style=>"color:#000000"  %>
+          <% else %>
+            <%= link_to "Registrarse", new_user_registration_path, :class => 'navbar-link'  %> |
+            <%= link_to "Login", new_user_session_path, :class => 'navbar-link'  %>
+          <% end %>
+        </p>
+      </div>
+    </div>
+    </nav>
+    <div class="container">
+      <% if notice %>
+        <p class="alert alert-success"><%= notice %></p>
+      <% end %>
+      <% if alert %>
+        <p class="alert alert-danger"><%= alert %></p>
+      <% end %>
+      <br>
+    </br>
+      <br>
+    </br>
+  <br>
+</br>
+<br>
+</br>
+<br>
+</br>
+<br>
+</br>
+<br>
+</br>
+<br>
+</br>
+<br>
+</br>
+<br>
+</br>
+<br>
+</br>
+<br>
+</br>
+<br>
+</br>
+      <%= yield %>
+    </div><br>
+      </br>
+      <br>
+    </br>
+    <footer style="background: #428bca">
+      <br>
+    </br>
+      <div class="container" style="color:#000000">
+        <strong style="font-size:large">Ski Rental</strong>
+      </div>
+      <br>
+    </br>
+      <div>
+        <table>
+          <td style="padding-left: 354px;">
+            <strong><%= link_to 'Contacto', new_contact_path, :style=>"color:#000000" %></strong>
+          </td>
+          <td style="padding-left: 354px; color:#000000">
+            <strong>Redes Sociales</strong>
+          </td>
+          <td style="padding-left: 354px; color:#000000">
+            <strong>Partners</strong>
+          </td>
+      </table>
+      </div>
+      <br>
+    </br>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.js"></script>
+  </body>
+</html>

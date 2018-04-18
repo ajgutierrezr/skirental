@@ -1,0 +1,41 @@
+<h1>Bienvenido a Rental Ski!</h1>
+<br>
+</br>
+<table>
+  <div style="text-align: center;">
+    <td style="padding-right: 100px;">
+      <%= link_to 'Check In', checkins_path, :class => "btn btn-primary btn-hg" %>
+    </td>
+
+    <td style="padding-right: 100px;">
+      <%= link_to 'Precios y packs', equipos_path, :class => "btn btn-primary btn-hg" %>
+    </td>
+
+    <td style="padding-right: 100px;">
+      <%= link_to 'Nuestro equipo', equipos_path, :class => "btn btn-primary btn-hg" %>
+    </td>
+  </div>
+</table>
+
+<br>
+</br>
+
+<table class="table">
+  <tbody class= "jumbotron" style="background-color: #ffcc66">
+    <% @homes.each do |home| %>
+        <tr>
+          <td class = "container" style="max-width:200px;" ><%= "Snowforecast" %></td>
+          <td class = "container" style="background-color: #428bca"><%= home.snowforecast %></td>
+        </tr>
+      <tr>
+          <td class = "container" style="max-width: 200px;"><%= "Condiciones del camino" %></td>
+          <td class = "container" style="background-color: #428bca"><%= home.camino %></td>
+        </tr>
+        <% if user_signed_in? %>
+          <% if current_user.admin %>
+            <p><%= link_to 'Edit', edit_home_path(home) %></p>
+          <% end %>
+        <% end %>
+    <% end %>
+  </tbody>
+</table>

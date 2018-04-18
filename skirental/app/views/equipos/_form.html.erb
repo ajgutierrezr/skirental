@@ -1,0 +1,42 @@
+<%= form_for(equipo) do |f| %>
+  <% if equipo.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(equipo.errors.count, "error") %> No se pudo guardar este equipo:</h2>
+
+      <ul>
+      <% equipo.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label 'Equipo' %>
+    <%= f.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= f.label 'Descripción' %>
+    <%= f.text_area :description %>
+  </div>
+
+  <div class="field">
+    <%= f.label 'Foto' %>
+    <%= f.text_field :picture %>
+  </div>
+
+  <div class="field">
+    <%= f.label 'Precio' %>
+    <%= f.number_field :price %>
+  </div>
+
+  <div class="field">
+    <%= f.label 'Stock' %>
+    <%= f.number_field :stock %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

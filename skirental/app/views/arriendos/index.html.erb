@@ -1,0 +1,41 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Arriendos</h1>
+
+<div class="container">
+  <div class="table-responsive">
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>Nropedido</th>
+          <th colspan="3"></th>
+        </tr>
+      </thead>
+
+      <% if user_signed_in?%>
+        <tbody>
+          <% @repeat = Array.new%>
+          <% @arriendos.each do |arriendo| %>
+            <% if current_user.id == arriendo.user_id %>
+              <% if @repeat.include?(arriendo.nropedido) == false%>
+                <tr>
+                  <td><%= arriendo.nropedido %></td>
+                  <td><%= link_to 'Mostrar', arriendo_path(arriendo) %></td>
+                  <td><%= link_to 'Editar', edit_arriendo_path(arriendo) %></td>
+                  <td><%= link_to 'Eliminar', arriendo, method: :delete, data: { confirm: 'Seguro?' } %></td>
+                </tr>
+                <% @repeat.push(arriendo.nropedido) %>
+              <% end %>
+            <% end %>
+          <% end %>
+        </tbody>
+      <% else %>
+        <%= "Ingrese su numero de reserva" %>
+      <% end %>
+    </table>
+  </div>
+</div>
+
+<br>
+
+<%= link_to 'Continuar arrendando', equipos_path %>

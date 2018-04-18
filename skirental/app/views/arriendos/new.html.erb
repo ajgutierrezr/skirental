@@ -1,0 +1,9 @@
+<h1>Nuevo Arriendo</h1>
+<br>
+</br>
+<% if params[:arr].present? %>
+  <%= render 'form', arriendo: @arriendo, id: Equipo.find(params[:eq]).id %>
+<% else %>
+  <%= render 'form', arriendo: @arriendo, id: Equipo.find(params[:eq]).id %>
+<% end %>
+<%= link_to 'Atras', arriendos_path %>
