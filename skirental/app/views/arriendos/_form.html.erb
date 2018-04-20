@@ -11,32 +11,6 @@
     </div>
   <% end %>
   <% if user_signed_in? %>
-
-    <div class="field">
-      <%= f.label :talla %>
-      <%= f.number_field :talla, :value => current_user.talla %>
-    </div>
-
-    <div class="field">
-      <%= f.label :altura %>
-      <%= f.number_field :altura, :value => current_user.altura %>
-    </div>
-
-    <div class="field">
-      <%= f.label :edad %>
-      <%= f.number_field :edad, :value => current_user.edad %>
-    </div>
-
-    <div class="field">
-      <%= f.label :peso %>
-      <%= f.number_field :peso, :value => current_user.peso %>
-    </div>
-
-    <div class="field">
-      <%= f.label :cantidad %>
-      <%= f.number_field :cantidad %>
-    </div>
-
     <div class="field">
       <%= f.label "Fecha de Uso" %>
       <%= f.date_select :fecha, {order: [:day, :month, :year], prompt: {day: 'Dia', month: 'Mes', year: 'Año'}, start_year: Date.today.year, end_year: Date.today.year + 5}, :required => true %>
@@ -45,6 +19,10 @@
     <div class="field">
       <%= f.label "Dias de Uso" %>
       <%= f.number_field :dias %>
+    </div>
+
+    <div class="field">
+      <%= f.hidden_field :cantidad, :value => 1 %>
     </div>
 
     <div class="field">
@@ -74,25 +52,8 @@
     Si te registras, guardamos tus datos y no tienes que rellenarlos siempre!
   </p>
 
-    <div class="field">
-      <%= f.label :talla %>
-      <%= f.number_field :talla %>
-    </div>
-
-    <div class="field">
-      <%= f.label :altura %>
-      <%= f.number_field :altura %>
-    </div>
-
-    <div class="field">
-      <%= f.label :edad %>
-      <%= f.number_field :edad %>
-    </div>
-
-    <div class="field">
-      <%= f.label :peso %>
-      <%= f.number_field :peso %>
-    </div>
+  <br>
+  </br>
 
     <div class="field">
       <%= f.label :email %>
@@ -135,7 +96,7 @@
     <div class="field">
       <%= f.hidden_field :nropedido, :value => Time.current.to_i.to_s + Equipo.find(id).name[0..2].upcase + id.to_s %>
     </div>
-    
+
     <div class="actions">
       <%= f.submit %>
     </div>
