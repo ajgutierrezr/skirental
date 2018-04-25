@@ -42322,3 +42322,13 @@ Migrating to SetDefaultExp (20180425010341)
   [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
   [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(150662671610792250)[0m
   [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Started GET "/" for 127.0.0.1 at 2018-04-25 00:33:07 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/alejandro/skirental/app/controllers/application_controller.rb:4)
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  [1m[36mHome Load (2.3ms)[0m  [1m[34mSELECT "homes".* FROM "homes"[0m
+  Rendered homes/index.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 944ms (Views: 897.5ms | ActiveRecord: 3.2ms)
+
+
