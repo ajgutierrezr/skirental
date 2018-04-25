@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Ski Rental</title>
+    <title>Rental Ski</title>
     <%= csrf_meta_tags %>
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.css">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap-theme.css">
@@ -10,7 +10,7 @@
 
   <body>
     <nav class="navbar navbar-dark navbar-fixed-top" style="background: #428bca" role="navigation">
-    <div class="container">
+    <div class="container-fluid">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle"  data-toggle="collapse" data-target=".navbar-collapse" style="background: #428bca">
           <span class="sr-only" >Toggle navigation</span>
@@ -29,6 +29,9 @@
           <li class="active"><a style="color:#000000" href="/terminos">Terminos y Condiciones</a></li>
         </ul>
         <p class="navbar-text pull-right" style="color:#000000">
+          <%= link_to 'ENG', homes_path, :class => 'navbar-link', :style=>"color:#000000" %> |
+          <%= link_to "ESP", homes_path, method: :delete, :class => 'navbar-link', :style=>"color:#000000"  %> |
+          <%= link_to 'PTG', homes_path, :class => 'navbar-link', :style=>"color:#000000; padding-right:30px;" %>
           <% if user_signed_in? %>
             Logged in as <strong><%= current_user.email %></strong>.
             <%= link_to 'Editar Perfil', edit_user_registration_path, :class => 'navbar-link', :style=>"color:#000000" %> |
@@ -82,20 +85,20 @@
     <footer style="background: #428bca">
       <br>
     </br>
-      <div class="container" style="color:#000000">
+      <div class="container-fluid" style="color:#000000; padding-left: 50px;">
         <strong style="font-size:large">Ski Rental</strong>
       </div>
       <br>
     </br>
       <div>
-        <table>
-          <td style="padding-left: 354px;">
+        <table class = "container-fluid" style="font-size:25px;  color:#000000">
+          <td style="padding-left: 100px;">
             <strong><%= link_to 'Contacto', new_contact_path, :style=>"color:#000000" %></strong>
           </td>
-          <td style="padding-left: 354px; color:#000000">
+          <td style="padding-left: 354px;">
             <strong>Redes Sociales</strong>
           </td>
-          <td style="padding-left: 354px; color:#000000">
+          <td style="padding-left: 354px;">
             <strong>Partners</strong>
           </td>
       </table>

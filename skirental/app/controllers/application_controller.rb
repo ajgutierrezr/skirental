@@ -6,8 +6,8 @@ class ApplicationController < ActionController::Base
   protected
 
   def configure_permitted_parameters
-    devise_parameter_sanitizer.permit(:sign_up, keys:[:nombre,:apellidopaterno,:apellidomaterno,:edad,:peso, :email, :password, :altura, :talla, :admin, :linker])
-    devise_parameter_sanitizer.permit(:account_update, keys:[:nombre,:apellidopaterno,:apellidomaterno,:edad,:peso, :email, :password, :altura, :talla, :admin, :linker])
+    devise_parameter_sanitizer.permit(:sign_up, keys:[:nombre,:apellidopaterno,:apellidomaterno,:edad,:peso, :email, :password, :altura, :talla, :admin, :linker, :experience])
+    devise_parameter_sanitizer.permit(:account_update, keys:[:nombre,:apellidopaterno,:apellidomaterno,:edad,:peso, :email, :password, :altura, :talla, :admin, :linker, :experience])
   end
 
   def agregar(user_id, linker)

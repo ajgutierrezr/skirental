@@ -2,8 +2,10 @@
 
 <h1>Arriendos</h1>
 <div>
-  <% if current_user.linker != nil %>
-    <% agregar(current_user.id, current_user.linker) %>
+  <% if user_signed_in? %>
+    <% if current_user.linker != nil %>
+      <% agregar(current_user.id, current_user.linker) %>
+    <% end %>
   <% end %>
 </div>
 <% if user_signed_in?%>

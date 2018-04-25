@@ -75,6 +75,6 @@ class ArriendosController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def arriendo_params
-      params.require(:arriendo).permit(:talla, :altura, :edad, :peso, :nombre, :apellidop, :apellidom, :nropedido, :cantidad, :user_id, :equipo_id, :email, :fecha, :dias)
+      params.require(:arriendo).permit(:talla, :altura, :edad, :peso, :nombre, :apellidop, :apellidom, :nropedido, :cantidad, :user_id, :equipo_id, :email, :fecha, :dias, :experience)
     end
 end
