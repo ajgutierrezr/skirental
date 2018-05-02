@@ -1,4 +1,4 @@
-<h1>Registrarse</h1>
+<h1>Registrarse</h2>
 
 <br>
 </br>
@@ -26,6 +26,10 @@
 
   <div class="field" style="padding-top:4px">
     <%= f.password_field :password_confirmation, autocomplete: "off", placeholder: "Confirmar clave", size: "68"  %>
+  </div>
+
+  <div class="field" style="padding-top:4px">
+    <%= f.number_field :edad, placeholder: "Edad"%>
   </div>
 
   <br>
