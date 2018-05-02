@@ -24,9 +24,22 @@
 
 body {
   background-color: #f2f2f2;
+  position: relative;
+  padding-bottom: 200px;
+  min-height: 100vh;
+}
+
+.home-bg {
   background-image: url('option.jpg');
   background-repeat: no-repeat;
   background-size: 100%;
+}
+
+.footer {
+  position: absolute;
+  width: 100%;
+  background: #428bca;
+  bottom: 0px;
 }
 
 label {
