@@ -91,7 +91,7 @@
 
     <div class="field">
       <%= f.label "Dias de Uso" %>
-      <%= f.number_field :dias %>
+      <%= f.number_field :dias, :min => 1 %>
     </div>
 
     <div class="field">

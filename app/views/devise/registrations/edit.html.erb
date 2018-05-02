@@ -70,17 +70,17 @@
 
     <div class="field">
       <%= f.label :edad %>
-      <%= f.number_field :edad %>
+      <%= f.number_field :edad, :min => 1 %>
     </div>
 
     <div class="field">
       <%= f.label :peso %>
-      <%= f.number_field :peso %>
+      <%= f.number_field :peso, :min => 1 %>
     </div>
 
     <div class="field">
       <%= f.label :altura %>
-      <%= f.number_field :altura %>
+      <%= f.number_field :altura, :min => 1 %>
     </div>
 
     <div class="field">
@@ -90,7 +90,7 @@
 
     <div class="field">
       <%= f.label :talla %>
-      <%= f.text_field :talla %>
+      <%= f.text_field :talla, :min => 1 %>
     </div>
 
     <br>
