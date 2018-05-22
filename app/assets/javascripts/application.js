@@ -15,3 +15,6 @@
 //= require turbolinks
 //= require bootstrap.min
 //= require_tree .
+
+document.body.style.zoom="90%"
+-moz-transform: scale(0.9);
