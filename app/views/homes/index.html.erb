@@ -1,63 +1,52 @@
-<br>
-</br>
-<br>
-</br>
-<br>
-</br>
-<br>
-</br>
-<br>
-</br>
-<br>
-</br>
-<br>
-</br>
-<br>
-</br>
-<br>
-</br>
-<h1>Bienvenido a Rental Ski!</h1>
-<br>
-</br>
-<body class="home-bg">
-  <table>
-    <div style="text-align: center;">
-      <td style="padding-right: 100px;">
-        <%= link_to 'Check In', checkins_path, :class => "btn btn-primary btn-hg" %>
-      </td>
+<header class="viewport" style="overflow: hidden; min-width: 100%">
+     <img src="/images/option.jpg" alt="Homepage image" class="responsive">
+</header>
 
-      <td style="padding-right: 100px;">
-        <%= link_to 'Precios y packs', equipos_path, :class => "btn btn-primary btn-hg" %>
-      </td>
-
-      <td style="padding-right: 100px;">
-        <%= link_to 'Nuestro equipo', equipos_path, :class => "btn btn-primary btn-hg" %>
-      </td>
-    </div>
-  </table>
-
+<div class="container">
   <br>
   </br>
-  <br>
-  </br>
+  <body class="home-bg">
+    <h1>Bienvenido a Rental Ski!</h1>
+    <br>
+    </br>
+    <table>
+      <div style="text-align: center;">
+        <td style="padding-right: 100px;">
+          <%= link_to 'Check In', checkins_path, :class => "btn btn-primary btn-hg" %>
+        </td>
 
-  <table class="table">
-    <tbody class= "jumbotron" style="background-color: #ffcc66">
-      <% @homes.each do |home| %>
+        <td style="padding-right: 100px;">
+          <%= link_to 'Precios y packs', equipos_path, :class => "btn btn-primary btn-hg" %>
+        </td>
+
+        <td style="padding-right: 100px;">
+          <%= link_to 'Nuestro equipo', equipos_path, :class => "btn btn-primary btn-hg" %>
+        </td>
+      </div>
+    </table>
+    <br>
+    </br>
+    <br>
+    </br>
+
+    <table class="table">
+      <tbody class= "jumbotron" style="background-color: #ffcc66">
+        <% @homes.each do |home| %>
+            <tr>
+              <td class = "container" style="max-width:200px;" ><%= "Snowforecast" %></td>
+              <td class = "container" style="background-color: #428bca"><%= home.snowforecast %></td>
+            </tr>
           <tr>
-            <td class = "container" style="max-width:200px;" ><%= "Snowforecast" %></td>
-            <td class = "container" style="background-color: #428bca"><%= home.snowforecast %></td>
-          </tr>
-        <tr>
-            <td class = "container" style="max-width: 200px;"><%= "Condiciones del camino" %></td>
-            <td class = "container" style="background-color: #428bca"><%= home.camino %></td>
-          </tr>
-          <% if user_signed_in? %>
-            <% if current_user.admin %>
-              <p><%= link_to 'Edit', edit_home_path(home) %></p>
+              <td class = "container" style="max-width: 200px;"><%= "Condiciones del camino" %></td>
+              <td class = "container" style="background-color: #428bca"><%= home.camino %></td>
+            </tr>
+            <% if user_signed_in? %>
+              <% if current_user.admin %>
+                <p><%= link_to 'Edit', edit_home_path(home) %></p>
+              <% end %>
             <% end %>
-          <% end %>
-      <% end %>
-    </tbody>
-  </table>
-</body>
+        <% end %>
+      </tbody>
+    </table>
+  </body>
+</div>

@@ -3,7 +3,7 @@ require_relative 'application'
 
 ActionMailer::Base.smtp_settings = {
   :user_name => '',
-  :password => ''
+  :password => '',
   :domain => 'www.rentalskichile.cl',
   :address => 'smtp.sendgrid.net',
   :port => 465,

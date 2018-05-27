@@ -12,7 +12,6 @@
 
 .navbar {
   padding-top: 10px;
-  min-height: 65px;
   font-size: 1.4em;
 }
 
@@ -29,10 +28,9 @@ body {
   min-height: 100vh;
 }
 
-.home-bg {
-  background-image: url('option.jpg');
-  background-repeat: no-repeat;
-  background-size: 100%;
+.responsive {
+  width: 100%;
+  height: auto;
 }
 
 .footer {
