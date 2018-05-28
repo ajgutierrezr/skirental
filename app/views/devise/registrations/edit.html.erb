@@ -1,116 +1,122 @@
-<% if :action.present? %>
-  <h2>Editar <%= resource_name.to_s.humanize %></h2>
+<br>
+</br>
+<br>
+</br>
+<div class="container">
+  <% if :action.present? %>
+    <h2>Editar <%= resource_name.to_s.humanize %></h2>
 
-  <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
-    <%= devise_error_messages! %>
+    <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
+      <%= devise_error_messages! %>
 
-    <div class="field">
-      <%= f.label 'Codigo de reserva' %>
-      <%= f.text_field :linker %>
-    </div>
+      <div class="field">
+        <%= f.label 'Codigo de reserva' %>
+        <%= f.text_field :linker %>
+      </div>
 
-    <br>
-    </br>
+      <br>
+      </br>
 
-    <div class="field">
-      <%= f.label "Clave Actual" %><br />
-      <%= f.password_field :current_password, autocomplete: "off" %>
-    </div>
+      <div class="field">
+        <%= f.label "Clave Actual" %><br />
+        <%= f.password_field :current_password, autocomplete: "off" %>
+      </div>
 
-    <div class="actions">
-      <%= f.submit "Agregar" %>
-    </div>
+      <div class="actions">
+        <%= f.submit "Agregar" %>
+      </div>
 
-  <% end %>
-
-<%= link_to "Atrás", :back %>
-
-<% else %>
-  <h2>Editar <%= resource_name.to_s.humanize %></h2>
-
-  <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
-    <%= devise_error_messages! %>
-
-    <div class="field">
-      <%= f.label 'Email' %><br />
-      <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
-    </div>
-
-    <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
-      <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
     <% end %>
-
-    <div class="field">
-      <%= f.label 'Clave' %> <i>(En blanco si no la cambias)</i><br />
-      <%= f.password_field :password, autocomplete: "off" %>
-      <% if @minimum_password_length %>
-        <br />
-        <em><%= @minimum_password_length %> caracteres minimo</em>
-      <% end %>
-    </div>
-
-    <div class="field">
-      <%= f.label 'Confirmar Clave' %><br />
-      <%= f.password_field :password_confirmation, autocomplete: "off" %>
-    </div>
-
-    <div class="field">
-      <%= f.label :nombre %>
-      <%= f.text_field :nombre %>
-    </div>
-
-    <div class="field">
-      <%= f.label "Apellido Paterno" %>
-      <%= f.text_field :apellidopaterno %>
-    </div>
-    <div class="field">
-      <%= f.label "Apellido Materno" %>
-      <%= f.text_field :apellidomaterno %>
-    </div>
-
-    <div class="field">
-      <%= f.label :edad %>
-      <%= f.number_field :edad, :min => 1 %>
-    </div>
-
-    <div class="field">
-      <%= f.label :peso %>
-      <%= f.number_field :peso, :min => 1 %>
-    </div>
-
-    <div class="field">
-      <%= f.label :altura %>
-      <%= f.number_field :altura, :min => 1 %>
-    </div>
-
-    <div class="field">
-      <%= f.label "Nivel" %>
-      <%= f.number_field :experience, :min => 1, :max => 3 %>
-    </div>
-
-    <div class="field">
-      <%= f.label :talla %>
-      <%= f.text_field :talla, :min => 1 %>
-    </div>
-
-    <br>
-    </br>
-
-    <div class="field">
-      <%= f.label "Clave Actual" %><br />
-      <%= f.password_field :current_password, autocomplete: "off" %>
-    </div>
-
-    <div class="actions">
-      <%= f.submit "Actualizar" %>
-    </div>
-
-  <% end %>
-
-  <h3>Cancelar mi cuenta</h3>
-
-  <p><%= button_to "Cancelar mi cuenta", registration_path(resource_name), data: { confirm: "Seguro?" }, method: :delete %></p>
 
   <%= link_to "Atrás", :back %>
 
-<% end %>
+  <% else %>
+    <h2>Editar <%= resource_name.to_s.humanize %></h2>
+
+    <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
+      <%= devise_error_messages! %>
+
+      <div class="field">
+        <%= f.label 'Email' %><br />
+        <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+      </div>
+
+      <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
+        <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
+      <% end %>
+
+      <div class="field">
+        <%= f.label 'Clave' %> <i>(En blanco si no la cambias)</i><br />
+        <%= f.password_field :password, autocomplete: "off" %>
+        <% if @minimum_password_length %>
+          <br />
+          <em><%= @minimum_password_length %> caracteres minimo</em>
+        <% end %>
+      </div>
+
+      <div class="field">
+        <%= f.label 'Confirmar Clave' %><br />
+        <%= f.password_field :password_confirmation, autocomplete: "off" %>
+      </div>
+
+      <div class="field">
+        <%= f.label :nombre %>
+        <%= f.text_field :nombre %>
+      </div>
+
+      <div class="field">
+        <%= f.label "Apellido Paterno" %>
+        <%= f.text_field :apellidopaterno %>
+      </div>
+      <div class="field">
+        <%= f.label "Apellido Materno" %>
+        <%= f.text_field :apellidomaterno %>
+      </div>
+
+      <div class="field">
+        <%= f.label :edad %>
+        <%= f.number_field :edad, :min => 1 %>
+      </div>
+
+      <div class="field">
+        <%= f.label :peso %>
+        <%= f.number_field :peso, :min => 1 %>
+      </div>
+
+      <div class="field">
+        <%= f.label :altura %>
+        <%= f.number_field :altura, :min => 1 %>
+      </div>
+
+      <div class="field">
+        <%= f.label "Nivel" %>
+        <%= f.number_field :experience, :min => 1, :max => 3 %>
+      </div>
+
+      <div class="field">
+        <%= f.label :talla %>
+        <%= f.text_field :talla, :min => 1 %>
+      </div>
+
+      <br>
+      </br>
+
+      <div class="field">
+        <%= f.label "Clave Actual" %><br />
+        <%= f.password_field :current_password, autocomplete: "off" %>
+      </div>
+
+      <div class="actions">
+        <%= f.submit "Actualizar" %>
+      </div>
+
+    <% end %>
+
+    <h3>Cancelar mi cuenta</h3>
+
+    <p><%= button_to "Cancelar mi cuenta", registration_path(resource_name), data: { confirm: "Seguro?" }, method: :delete %></p>
+
+    <%= link_to "Atrás", :back %>
+
+  <% end %>
+</div>

@@ -1,40 +1,47 @@
-<p id="notice"><%= notice %></p>
+<br>
+</br>
+<br>
+</br>
 
-<% Arriendo.all.each do |arr| %>
-  <% if arr.nropedido == @arriendo.nropedido %>
-    <tr>
-      <div  class = "jumbotron" style="background-color: #ffcc66">
-        <strong> <%= Equipo.find(arr.equipo_id).name %> </strong>
-        <br>
-        </br>
-        <p>
-        <%= "Talla: " + arr.talla.to_s  %>
-        </p>
-        <p>
-          <%= "Altura: " + arr.altura.to_s + " m" %>
-        </p>
-        <p>
-          <%= "Peso: " + arr.peso.to_s + " kg"%>
-        </p>
-        <p>
-          <%= "Edad: " + arr.edad.to_s + " años"%>
-        </p>
-        <p>
-          <%= "Nombre: " + arr.nombre + " " + arr.apellidop + " " + arr.apellidom %>
-        </p>
-        <p>
-          <%= "Numero de pedido: " + arr.nropedido %>
-        </p>
-        <p>
-          <%= link_to 'Editar', edit_arriendo_path(arr, :eq => arr.equipo_id) %>
-        </p>
-      </div>
-    </tr>
-  <% end%>
-<% end %>
+<div class="container">
+  <p id="notice"><%= notice %></p>
 
-<% if user_signed_in? %>
-  <%= link_to 'Continuar el pedido', equipos_path(:nroarr => @arriendo.id) %>
-<% else %>
-  Puedes agregar mas ordenes a tu arriendo si te registras!
-<% end %>
+  <% Arriendo.all.each do |arr| %>
+    <% if arr.nropedido == @arriendo.nropedido %>
+      <tr>
+        <div  class = "jumbotron" style="background-color: #ffcc66">
+          <strong> <%= Equipo.find(arr.equipo_id).name %> </strong>
+          <br>
+          </br>
+          <p>
+          <%= "Talla: " + arr.talla.to_s  %>
+          </p>
+          <p>
+            <%= "Altura: " + arr.altura.to_s + " m" %>
+          </p>
+          <p>
+            <%= "Peso: " + arr.peso.to_s + " kg"%>
+          </p>
+          <p>
+            <%= "Edad: " + arr.edad.to_s + " años"%>
+          </p>
+          <p>
+            <%= "Nombre: " + arr.nombre + " " + arr.apellidop + " " + arr.apellidom %>
+          </p>
+          <p>
+            <%= "Numero de pedido: " + arr.nropedido %>
+          </p>
+          <p>
+            <%= link_to 'Editar', edit_arriendo_path(arr, :eq => arr.equipo_id) %>
+          </p>
+        </div>
+      </tr>
+    <% end%>
+  <% end %>
+
+  <% if user_signed_in? %>
+    <%= link_to 'Continuar el pedido', equipos_path(:nroarr => @arriendo.id) %>
+  <% else %>
+    Puedes agregar mas ordenes a tu arriendo si te registras!
+  <% end %>
+</div>
