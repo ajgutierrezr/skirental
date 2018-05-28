@@ -1,5 +1,5 @@
 class ContactMailer < ApplicationMailer
-    default :from => "rentalski@rentalski.com"
+    default :from => "user@rentalski.com"
 
     def contactar(cont)
       @m = "Desde el email " + cont.email

@@ -1,5 +1,5 @@
 class ArriendoMailer < ApplicationMailer
-  default :from => "rentalski@rentalski.com"
+  default :from => "noreply@rentalski.com"
   # Subject can be set in your I18n file at config/locales/en.yml
   # with the following lookup:
   #
