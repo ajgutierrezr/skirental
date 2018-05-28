@@ -1,8 +1,8 @@
 ActionMailer::Base.register_interceptor(SendGrid::MailInterceptor)
 
 ActionMailer::Base.smtp_settings = {
-  :user_name => 'apikey',
-  :password => '',
+  :user_name => Rails.application.secrets.sendgrid_user,
+  :password => Rails.application.secrets.sendgrid_password,
   :domain => 'www.rentalskichile.cl',
   :address => 'smtp.sendgrid.net',
   :port => '587',
