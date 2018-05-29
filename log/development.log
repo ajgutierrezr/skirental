@@ -46525,3 +46525,112 @@ Processing by HomesController#index as HTML
 Completed 200 OK in 426ms (Views: 388.1ms | ActiveRecord: 1.9ms)
 
 
+Started GET "/" for 127.0.0.1 at 2018-05-28 19:56:59 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (2.8ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/alejandro/Downloads/skirental/app/controllers/application_controller.rb:4)
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  [1m[36mHome Load (0.3ms)[0m  [1m[34mSELECT "homes".* FROM "homes"[0m
+  Rendered homes/index.html.erb within layouts/application (23.1ms)
+Completed 200 OK in 496ms (Views: 457.9ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2018-05-28 19:57:02 -0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.1ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (34.9ms)
+Completed 200 OK in 121ms (Views: 56.9ms | ActiveRecord: 24.1ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2018-05-28 19:57:15 -0400
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QlxqLJ/efdsV5ZWKaUpwc2nKuXv7peW7R34U57k7JA/rCAWuq7VoHRntZgWR0+4L9yEerFi3K8GBbNwfuerBtQ==", "user"=>{"nombre"=>"a", "apellidopaterno"=>"a", "apellidomaterno"=>"a", "email"=>"a@a", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "edad"=>"22"}, "commit"=>"Registrarse"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (5.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "a@a"], ["LIMIT", 1]]
+  [1m[35mSQL (4.5ms)[0m  [1m[32mINSERT INTO "users" ("nombre", "apellidopaterno", "edad", "created_at", "updated_at", "email", "encrypted_password", "apellidomaterno", "confirmation_token", "confirmation_sent_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["nombre", "a"], ["apellidopaterno", "a"], ["edad", 22], ["created_at", "2018-05-28 23:57:16.269838"], ["updated_at", "2018-05-28 23:57:16.269838"], ["email", "a@a"], ["encrypted_password", "$2a$11$AzzepDxjfpRqb53zUkJZ2ufJY/.e35kqJP4WeRLcIc5zgWfYaV8e6"], ["apellidomaterno", "a"], ["confirmation_token", "qhCfqMdp2xgyxytsW63f"], ["confirmation_sent_at", "2018-05-28 23:57:16.270015"]]
+  [1m[35m (10.0ms)[0m  [1m[35mCOMMIT[0m
+  Rendering devise/mailer/confirmation_instructions.html.erb
+  Rendered devise/mailer/confirmation_instructions.html.erb (0.7ms)
+Devise::Mailer#confirmation_instructions: processed outbound mail in 717.2ms
+Sent mail to noreply@example.com (1538.6ms)
+Date: Mon, 28 May 2018 19:57:17 -0400
+From: rentalski@rentalski.com
+Reply-To: rentalski@rentalski.com
+To: noreply@example.com
+Message-ID: <5b0c975d86ad_e5a2ad040f2e17c768ee@alejandro-VirtualBox.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+X-SMTPAPI: {"to":[ "a@a" ]}
+
+<p>Welcome a@a!</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=qhCfqMdp2xgyxytsW63f">Confirm my account</a></p>
+
+Redirected to http://localhost:3000/
+Completed 302 Found in 2766ms (ActiveRecord: 20.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-28 19:57:18 -0400
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  [1m[36mHome Load (5.8ms)[0m  [1m[34mSELECT "homes".* FROM "homes"[0m
+  Rendered homes/index.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 27ms (Views: 20.1ms | ActiveRecord: 5.8ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2018-05-28 20:01:52 -0400
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/alejandro/Downloads/skirental/app/controllers/application_controller.rb:4)
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (4.6ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 82ms (Views: 40.7ms | ActiveRecord: 7.1ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2018-05-28 20:02:09 -0400
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"aHocETtdgZ1sD4jrzx+jj3kmKjAQEQBXeDwwUsI/QUnBLnOTDzaUW2AHe2Q3hj33582N57MDzi2+Lviqwu6k8w==", "user"=>{"nombre"=>"a", "apellidopaterno"=>"a", "apellidomaterno"=>"a", "email"=>"b@b", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "edad"=>"22"}, "commit"=>"Registrarse"}
+  [1m[35m (3.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (7.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "b@b"], ["LIMIT", 1]]
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "users" ("nombre", "apellidopaterno", "edad", "created_at", "updated_at", "email", "encrypted_password", "apellidomaterno", "confirmation_token", "confirmation_sent_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["nombre", "a"], ["apellidopaterno", "a"], ["edad", 22], ["created_at", "2018-05-29 00:02:10.062335"], ["updated_at", "2018-05-29 00:02:10.062335"], ["email", "b@b"], ["encrypted_password", "$2a$11$QUhUmO/fE8E6ANQU8jvxLu/C90cPrgcjXKcpj7Oj5yFChU.RR1CdG"], ["apellidomaterno", "a"], ["confirmation_token", "3S2Yx-XnQjNm86ze-Zpv"], ["confirmation_sent_at", "2018-05-29 00:02:10.062487"]]
+  [1m[35m (3.0ms)[0m  [1m[35mCOMMIT[0m
+  Rendering devise/mailer/confirmation_instructions.html.erb
+  Rendered devise/mailer/confirmation_instructions.html.erb (6.8ms)
+Devise::Mailer#confirmation_instructions: processed outbound mail in 35.6ms
+Sent mail to noreply@example.com (1556.5ms)
+Date: Mon, 28 May 2018 20:02:10 -0400
+From: rentalski@rentalski.com
+Reply-To: rentalski@rentalski.com
+To: noreply@example.com
+Message-ID: <5b0c98821de7e_e5a2ad040f2f27076965@alejandro-VirtualBox.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+X-SMTPAPI: {"to":[ "b@b" ]}
+
+<p>Welcome b@b!</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=3S2Yx-XnQjNm86ze-Zpv">Confirm my account</a></p>
+
+Redirected to http://localhost:3000/
+Completed 302 Found in 2015ms (ActiveRecord: 13.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-28 20:02:11 -0400
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  [1m[36mHome Load (0.2ms)[0m  [1m[34mSELECT "homes".* FROM "homes"[0m
+  Rendered homes/index.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 25ms (Views: 17.8ms | ActiveRecord: 4.1ms)
+
+

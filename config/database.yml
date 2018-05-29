@@ -81,5 +81,5 @@ test:
 production:
   <<: *default
   database: skirental_production
-  username: skirental
+  username: root
   password: <%= ENV['SKIRENTAL_DATABASE_PASSWORD'] %>

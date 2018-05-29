@@ -5,11 +5,11 @@ ActionMailer::Base.smtp_settings = {
   :password => Rails.application.secrets.sendgrid_password,
   :domain => 'www.rentalskichile.cl',
   :address => 'smtp.sendgrid.net',
-  :port => '587',
+  :port => '25',
   :authentication => :plain,
   :enable_starttls_auto => true
 }
 
 SendGrid.configure do |config|
-  config.dummy_recipient = 'noreply@example.com'
+  config.dummy_recipient = 'rentalski@gmail.com'
 end

@@ -1,7 +1,12 @@
 <header class="viewport" style="overflow: hidden; min-width: 100%">
      <img src="/images/option.jpg" alt="Homepage image" class="responsive">
 </header>
-
+<% if notice %>
+  <p class="alert alert-success"><%= notice %></p>
+<% end %>
+<% if alert %>
+  <p class="alert alert-danger"><%= alert %></p>
+<% end %>
 <div class="container">
   <br>
   </br>
