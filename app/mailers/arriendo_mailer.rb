@@ -26,7 +26,7 @@ class ArriendoMailer < ApplicationMailer
       @f = "Fecha: " + arr.fecha.to_formatted_s(:long)
       @fr = "Fecha de retorno: " + (arr.fecha + arr.dias).to_formatted_s(:long)
       @r = "Codigo de retiro: " + arr.nropedido
-      mail(:to => "admin@mail.com", :subject => "Nuevo arriendo")
+      mail(:to => "rentalskichile@gmail.com", :subject => "Nuevo arriendo")
     else
       @mensaje = "Un cliente ha reservado un arriendo, los detalles son: "
       @m = "Email: " + arr.email
@@ -35,7 +35,7 @@ class ArriendoMailer < ApplicationMailer
       @f = "Fecha: " + arr.fecha.to_formatted_s(:long)
       @fr = "Fecha de retorno: " + (arr.fecha + arr.dias).to_formatted_s(:long)
       @r = "Codigo de retiro: " + arr.nropedido
-      mail(:to => "admin@mail.com", :subject => "Nuevo arriendo")
+      mail(:to => "rentalskichile@gmail.com", :subject => "Nuevo arriendo")
     end
   end
 
