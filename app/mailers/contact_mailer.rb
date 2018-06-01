@@ -4,6 +4,6 @@ class ContactMailer < ApplicationMailer
     def contactar(cont)
       @m = "Desde el email " + cont.email
       @p = cont.message
-      mail(:to => "admin@mail.com", :subject => "Contacto establecido por usuario")
+      mail(:to => "rentalskichile@gmail.com", :subject => "Contacto establecido por usuario")
     end
 end

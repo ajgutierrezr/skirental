@@ -1,5 +1,3 @@
-ActionMailer::Base.register_interceptor(SendGrid::MailInterceptor)
-
 ActionMailer::Base.smtp_settings = {
   :user_name => Rails.application.secrets.sendgrid_user,
   :password => Rails.application.secrets.sendgrid_password,
