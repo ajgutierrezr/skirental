@@ -1,9 +1,8 @@
 <br>
 </br>
 <div class="container">
-  <% if :action.present? %>
-    <h2>Editar <%= resource_name.to_s.humanize %></h2>
-
+  puts():action)
+  <% if :action == "link" %>
     <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
       <%= devise_error_messages! %>
 
@@ -29,7 +28,7 @@
   <%= link_to "Atrás", :back %>
 
   <% else %>
-    <h2>Editar <%= resource_name.to_s.humanize %></h2>
+    <h2>Editar usuario</h2>
 
     <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
       <%= devise_error_messages! %>
