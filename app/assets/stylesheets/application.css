@@ -10,6 +10,13 @@
   display: inline-block;
 }
 
+.btn-sb, .btn-group-sb > .btn {
+  padding-top: 15px;
+  height: 50px;
+  width: 350px;
+  font-size: 15px;
+}
+
 .navbar {
   padding-top: 10px;
   font-size: 1.4em;
@@ -46,4 +53,10 @@ label {
   text-align: left;
   margin-right: 0.5em;
   display: block;
+}
+
+input[type=submit] {
+  height: 50px;
+  width: 350px;
+  font-size: 15px;
 }
