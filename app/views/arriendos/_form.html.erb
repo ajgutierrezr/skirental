@@ -27,6 +27,31 @@
     </div>
 
     <div class="field">
+      <%= f.label 'Talla de bota' %>
+      <%= f.number_field :talla, :value => current_user.talla, :min => 1 %>
+    </div>
+
+    <div class="field">
+      <%= f.label 'Talla de parka' %>
+      <%= f.number_field :talla_parka, :value => current_user.talla_parka, :min => 1 %>
+    </div>
+
+    <div class="field">
+      <%= f.label 'Talla de pantalon' %>
+      <%= f.number_field :talla_pantalon, :value => current_user.talla_pantalon, :min => 1 %>
+    </div>
+
+    <div class="field">
+      <%= f.label :altura %>
+      <%= f.number_field :altura, :value => current_user.altura, :min => 1 %>
+    </div>
+
+    <div class="field">
+      <%= f.label :peso %>
+      <%= f.number_field :peso, :value => current_user.peso, :min => 1 %>
+    </div>
+
+    <div class="field">
       <%= f.hidden_field :cantidad, :value => 1 %>
     </div>
 
@@ -85,6 +110,31 @@
     </div>
 
     <div class="field">
+      <%= f.label 'Talla de bota' %>
+      <%= f.number_field :talla, :min => 1 %>
+    </div>
+
+    <div class="field">
+      <%= f.label 'Talla de parka' %>
+      <%= f.number_field :talla_parka, :min => 1 %>
+    </div>
+
+    <div class="field">
+      <%= f.label 'Talla de pantalon' %>
+      <%= f.number_field :talla_pantalon, :min => 1 %>
+    </div>
+
+    <div class="field">
+      <%= f.label :altura %>
+      <%= f.number_field :altura, :min => 1 %>
+    </div>
+
+    <div class="field">
+      <%= f.label :peso %>
+      <%= f.number_field :peso, :min => 1 %>
+    </div>
+
+    <div class="field">
       <%= f.label "Fecha de Uso" %>
       <%= f.date_select :fecha, {order: [:day, :month, :year], prompt: {day: 'Dia', month: 'Mes', year: 'Año'}, start_year: Date.today.year, end_year: Date.today.year + 5}, :required => true %>
     </div>
@@ -95,7 +145,7 @@
     </div>
 
     <div class="field">
-      <%= f.label "Nivel" %>
+      <%= f.label "Nivel de ski" %>
       <%= f.number_field :dias, :min => 1, :max => 3, :value => 1 %>
     </div>
 
