@@ -24,7 +24,7 @@ class ArriendosController < ApplicationController
 
   def link(nror)
     @arriendo = Arriendo.find(params[nror])
-    @arriendo.useri_id = current_user.id
+    @arriendo.user_id = current_user.id
   end
 
   # POST /arriendos

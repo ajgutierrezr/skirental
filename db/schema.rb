@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180608201445) do
+ActiveRecord::Schema.define(version: 20180609230422) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -33,23 +33,25 @@ ActiveRecord::Schema.define(version: 20180608201445) do
   end
 
   create_table "arriendos", force: :cascade do |t|
-    t.integer  "talla",      default: 0
-    t.integer  "altura",     default: 0
-    t.integer  "edad",       default: 0
-    t.integer  "peso",       default: 0
-    t.string   "nombre",     default: ""
-    t.string   "apellidop",  default: ""
-    t.string   "apellidom",  default: ""
+    t.integer  "talla",          default: 0
+    t.integer  "altura",         default: 0
+    t.integer  "edad",           default: 0
+    t.integer  "peso",           default: 0
+    t.string   "nombre",         default: ""
+    t.string   "apellidop",      default: ""
+    t.string   "apellidom",      default: ""
     t.string   "nropedido"
-    t.integer  "cantidad",   default: 0
+    t.integer  "cantidad",       default: 0
     t.integer  "user_id"
     t.integer  "equipo_id"
-    t.datetime "created_at",              null: false
-    t.datetime "updated_at",              null: false
+    t.datetime "created_at",                  null: false
+    t.datetime "updated_at",                  null: false
     t.string   "email"
     t.date     "fecha"
-    t.integer  "dias",       default: 0
-    t.integer  "experience", default: 1
+    t.integer  "dias",           default: 0
+    t.integer  "experience",     default: 1
+    t.integer  "talla_parka",    default: 0
+    t.integer  "talla_pantalon", default: 0
   end
 
   create_table "checkins", force: :cascade do |t|
