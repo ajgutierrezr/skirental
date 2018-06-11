@@ -19,11 +19,15 @@
       </thead> -->
 
       <tbody>
+        <% sizes = ["240x120", "240x120", "240x120", "240x120", "240x120", "240x120", "60x60" , "60x60" , "60x60" , "60x60" , "60x60" , "60x60" , "60x60" , "60x60" , "60x60" , "60x60"] %>
+        <% counter = 0 %>
         <% @equipos.each do |equipo| %>
           <tr>
             <td>
             <strong><%= equipo.name %></strong>
-            <div><%= equipo.picture %></div>
+            <header class="viewport" >
+                <%=  image_tag(equipo.picture, size:sizes[counter]) %>
+            </header>
             </td>
             <td>
             <strong> Descripcion </strong>
@@ -46,6 +50,7 @@
                 <% end %>
             <% end %>
           </tr>
+          <% counter += 1 %>
         <% end %>
       </tbody>
     </table>
