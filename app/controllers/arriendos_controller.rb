@@ -41,6 +41,28 @@ class ArriendosController < ApplicationController
         format.json { render json: @arriendo.errors, status: :unprocessable_entity }
       end
     end
+
+    (1..@arriendo.cantidad).each do |arriendo2|
+      arriendo2 = Arriendo.new
+      arriendo2.talla = @arriendo.talla
+      arriendo2.talla_parka = @arriendo.talla_parka
+      arriendo2.talla_pantalon = @arriendo.talla_pantalon
+      arriendo2.altura = @arriendo.altura
+      arriendo2.fecha = @arriendo.fecha
+      arriendo2.peso = @arriendo.peso
+      arriendo2.nombre = @arriendo.nombre
+      arriendo2.apellidop = @arriendo.apellidop
+      arriendo2.apellidom = @arriendo.apellidom
+      arriendo2.nropedido = @arriendo.nropedido
+      arriendo2.cantidad = @arriendo.cantidad
+      arriendo2.user_id = @arriendo.user_id
+      arriendo2.equipo_id = @arriendo.equipo_id
+      arriendo2.email = @arriendo.email
+      arriendo2.dias = @arriendo.dias
+      arriendo2.experience = @arriendo.experience
+      arriendo2.save
+    end
+
   end
 
   # PATCH/PUT /arriendos/1

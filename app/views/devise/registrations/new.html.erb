@@ -39,7 +39,6 @@
       <%= f.date_select :nac, {order: [:day, :month, :year], prompt: {day: 'Dia', month: 'Mes', year: 'Año'}, start_year: Date.today.year - 80, end_year: Date.today.year}, :required => true %>
     </div>
 
-
     <div class="actions" style="padding-top:8px; padding-bottom: 10px;">
       <%= f.submit "Registrarse" %>
     </div>
