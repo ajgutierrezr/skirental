@@ -19,29 +19,29 @@
       </thead> -->
 
       <tbody>
-        <% sizes = ["240x120", "240x120", "240x120", "240x120", "240x120", "240x120", "60x60" , "60x60" , "60x60" , "60x60" , "60x60" , "60x60" , "60x60" , "60x60" , "60x60" , "60x60"] %>
+        <% sizes = ["240x120", "240x120", "240x120", "240x120", "240x60", "240x60", "60x60" , "60x60" , "60x60" , "60x60" , "60x60" , "60x60" , "60x60" , "60x60" , "60x60" , "60x60"] %>
         <% counter = 0 %>
-        <% @equipos.each do |equipo| %>
+        <% @equipos.order('price DESC').each do |equipo| %>
           <tr>
-            <td>
-            <strong><%= equipo.name %></strong>
-            <header class="viewport" >
+            <td style="padding-right: 0px">
+            <h3><strong><%= equipo.name %></strong></h3>
+            <header class="viewport" style="padding-top: 8px">
                 <%=  image_tag(equipo.picture, size:sizes[counter]) %>
             </header>
             </td>
             <td>
             <strong> Descripcion </strong>
-            <div><%= equipo.description %></div>
+            <div style="white-space:pre-wrap; padding-top: 8px"><%= equipo.description %></div>
             </td>
-            <td>
+            <td style="vertical-align: middle">
             <strong> Precio web </strong>
-            <div><%= equipo.price %></div>
+            <div style="padding-top: 8px"><%= "$ " + equipo.price.to_s %></div>
             </td>
             <!-- <td><%= equipo.stock %></td> -->
             <% if params[:nroarr].present? %>
-              <td><%= link_to 'Arrendar', new_arriendo_path(:eq => equipo.id, :arr => Arriendo.find(params[:nroarr]).id) %></td>
+              <td style="vertical-align: middle"><%= link_to 'Arrendar', new_arriendo_path(:eq => equipo.id, :arr => Arriendo.find(params[:nroarr]).id), :class=>"btn btn-primary btn-2"  %></td>
             <% else %>
-              <td><%= link_to 'Arrendar', new_arriendo_path(:eq => equipo.id) %></td>
+              <td style="vertical-align: middle"><%= link_to 'Arrendar', new_arriendo_path(:eq => equipo.id), :class=>"btn btn-primary btn-2"  %></td>
             <% end %>
             <% if user_signed_in? %>
               <% if current_user.admin %>

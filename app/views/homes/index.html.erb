@@ -1,5 +1,5 @@
 <header class="viewport" style="overflow: hidden; min-width: 100%">
-     <img src="/images/option.jpg" alt="Homepage image" class="responsive">
+     <img src="/images/IMG_4601.JPG" alt="Homepage image" class="responsive">
 </header>
 <% if notice %>
   <p class="alert alert-success"><%= notice %></p>
@@ -11,28 +11,34 @@
   <br>
   </br>
   <body class="home-bg">
-    <h1>Bienvenido a Rental Ski!</h1>
-    <br>
-    </br>
-    <table>
-      <div style="text-align: center;">
-        <td style="padding-right: 100px;">
-          <%= link_to 'Check In', checkins_path, :class => "btn btn-primary btn-hg" %>
-        </td>
+    <div style="margin-top:-750px;">
+      <h1 style="font-size:60px">Bienvenido a Rental Ski!</h1>
+      <br>
+      </br>
+      <br>
+      </br>
+      <br>
+      </br>
+      <table>
+        <div style="text-align: center;">
+          <td style="padding-right: 100px;">
+            <%= link_to 'Check In', checkins_path, :class => "btn btn-primary btn-hg" %>
+          </td>
 
-        <td style="padding-right: 100px;">
-          <%= link_to 'Precios y packs', equipos_path, :class => "btn btn-primary btn-hg" %>
-        </td>
+          <td style="padding-right: 100px;">
+            <%= link_to 'Precios y packs', equipos_path, :class => "btn btn-primary btn-hg" %>
+          </td>
 
-        <td style="padding-right: 100px;">
-          <%= link_to 'Nuestro equipo', equipos_path, :class => "btn btn-primary btn-hg" %>
-        </td>
-      </div>
-    </table>
-    <br>
-    </br>
-    <br>
-    </br>
+          <td style="padding-right: 100px;">
+            <%= link_to 'Nuestro equipo', equipos_path, :class => "btn btn-primary btn-hg" %>
+          </td>
+        </div>
+      </table>
+      <br>
+      </br>
+      <br>
+      </br>
+    </div>
 
     <table class="table">
       <tbody class= "jumbotron" style="background-color: #ffcc66">
