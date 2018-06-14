@@ -11,45 +11,6 @@
     </div>
   <% end %>
   <% if user_signed_in? %>
-    <div class="field" style="padding-top:8px">
-      <%= f.label "Fecha de Uso" %>
-      <%= f.date_select :fecha, {order: [:day, :month, :year], prompt: {day: 'Dia', month: 'Mes', year: 'Año'}, start_year: Date.today.year, end_year: Date.today.year + 5}, :required => true %>
-    </div>
-
-    <div class="field" style="padding-top:8px">
-      <%= f.label "Dias de Uso" %>
-      <%= f.number_field :dias %>
-    </div>
-
-    <div class="field" style="padding-top:8px">
-      <%= f.label "Nivel" %>
-      <%= f.number_field :experience, :min => 1, :max => 3, :value => current_user.experience %>
-    </div>
-
-    <div class="field" style="padding-top:8px">
-      <%= f.label 'Talla de bota' %>
-      <%= f.number_field :talla, :value => current_user.talla, :min => 1 %>
-    </div>
-
-    <div class="field" style="padding-top:8px">
-      <%= f.label 'Talla de parka' %>
-      <%= f.number_field :talla_parka, :value => current_user.talla_parka, :min => 1 %>
-    </div>
-
-    <div class="field" style="padding-top:8px">
-      <%= f.label 'Talla de pantalon' %>
-      <%= f.number_field :talla_pantalon, :value => current_user.talla_pantalon, :min => 1 %>
-    </div>
-
-    <div class="field" style="padding-top:8px">
-      <%= f.label :altura %>
-      <%= f.number_field :altura, :value => current_user.altura, :min => 1 %>
-    </div>
-
-    <div class="field" style="padding-top:8px">
-      <%= f.label :peso %>
-      <%= f.number_field :peso, :value => current_user.peso, :min => 1 %>
-    </div>
 
     <div class="field" style="padding-top:8px">
       <%= f.label 'Cantidad' %>
@@ -68,10 +29,32 @@
       <div class="field">
         <%= f.hidden_field :nropedido, :value => Arriendo.find(params[:arr]).nropedido %>
       </div>
+
+      <div class="field" style="padding-top:8px">
+        <%= f.label "Fecha de Uso" %>
+        <%= f.hidden_field :fecha, :value => Arriendo.find(params[:arr]).nropedido.fecha %>
+      </div>
+
+      <div class="field" style="padding-top:8px">
+        <%= f.label "Dias de Uso" %>
+        <%= f.hidden_field :dias, :value => Arriendo.find(params[:arr]).nropedido.dias %>
+      </div>
+
     <% else %>
+      <div class="field" style="padding-top:8px">
+        <%= f.label "Fecha de Uso" %>
+        <%= f.date_select :fecha, {order: [:day, :month, :year], prompt: {day: 'Dia', month: 'Mes', year: 'Año'}, start_year: Date.today.year, end_year: Date.today.year + 5}, :required => true %>
+      </div>
+
       <div class="field">
         <%= f.hidden_field :nropedido, :value => Time.current.to_i.to_s + Equipo.find(id).name[0..2].upcase + id.to_s%>
       </div>
+
+      <div class="field" style="padding-top:8px">
+        <%= f.label "Dias de Uso" %>
+        <%= f.number_field :dias %>
+      </div>
+
     <% end %>
 
     <div class="actions" style="padding-top:10px">
@@ -111,31 +94,6 @@
     </div>
 
     <div class="field" style="padding-top:8px">
-      <%= f.label 'Talla de bota' %>
-      <%= f.number_field :talla, :min => 1 %>
-    </div>
-
-    <div class="field" style="padding-top:8px">
-      <%= f.label 'Talla de parka' %>
-      <%= f.number_field :talla_parka, :min => 1 %>
-    </div>
-
-    <div class="field" style="padding-top:8px">
-      <%= f.label 'Talla de pantalon' %>
-      <%= f.number_field :talla_pantalon, :min => 1 %>
-    </div>
-
-    <div class="field" style="padding-top:8px">
-      <%= f.label :altura %>
-      <%= f.number_field :altura, :min => 1 %>
-    </div>
-
-    <div class="field" style="padding-top:8px">
-      <%= f.label :peso %>
-      <%= f.number_field :peso, :min => 1 %>
-    </div>
-
-    <div class="field" style="padding-top:8px">
       <%= f.label "Fecha de Uso" %>
       <%= f.date_select :fecha, {order: [:day, :month, :year], prompt: {day: 'Dia', month: 'Mes', year: 'Año'}, start_year: Date.today.year, end_year: Date.today.year + 5}, :required => true %>
     </div>
@@ -143,11 +101,6 @@
     <div class="field" style="padding-top:8px">
       <%= f.label "Dias de Uso"%>
       <%= f.number_field :dias, :min => 1 %>
-    </div>
-
-    <div class="field" style="padding-top:8px">
-      <%= f.label "Nivel de ski" %>
-      <%= f.number_field :experience, :min => 1, :max => 3, :value => 1 %>
     </div>
 
     <div class="field">

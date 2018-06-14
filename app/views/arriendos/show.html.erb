@@ -11,15 +11,6 @@
           <br>
           </br>
           <p>
-          <%= "Talla: " + arr.talla.to_s  %>
-          </p>
-          <p>
-            <%= "Altura: " + arr.altura.to_s + " m" %>
-          </p>
-          <p>
-            <%= "Peso: " + arr.peso.to_s + " kg"%>
-          </p>
-          <p>
             <%= "Fecha de uso: " + arr.fecha.to_s%>
           </p>
           <p>
@@ -41,4 +32,5 @@
   <% else %>
     Puedes agregar mas ordenes a tu arriendo si te registras!
   <% end %>
+    <%= link_to 'Terminar pedido', arriendos_path(arrid: => @arriendo.id) %>
 </div>

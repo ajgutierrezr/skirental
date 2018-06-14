@@ -12,9 +12,9 @@
   </br>
   <body class="home-bg">
     <div style="margin-top:-750px;">
-      <h1 style="font-size:60px">Bienvenido a Rental Ski!</h1>
       <br>
       </br>
+      <h1 style="font-size:60px">Bienvenido a Rental Ski!</h1>
       <br>
       </br>
       <br>
@@ -22,7 +22,7 @@
       <table>
         <div style="text-align: center;">
           <td style="padding-right: 100px;">
-            <%= link_to 'Check In', checkins_path, :class => "btn btn-primary btn-hg" %>
+            <%= link_to 'Check In', arriendos_path, :class => "btn btn-primary btn-hg" %>
           </td>
 
           <td style="padding-right: 100px;">
@@ -51,11 +51,11 @@
               <td class = "container" style="max-width: 200px;"><%= "Condiciones del camino" %></td>
               <td class = "container" style="background-color: #428bca"><%= home.camino %></td>
             </tr>
-            <% if user_signed_in? %>
-              <% if current_user.admin %>
-                <p><%= link_to 'Editar', edit_home_path(home) %></p>
-              <% end %>
-            <% end %>
+        <% end %>
+        <% if user_signed_in? %>
+          <% if current_user.admin %>
+            <p><%= link_to 'Editar', edit_home_path(home) %></p>
+          <% end %>
         <% end %>
       </tbody>
     </table>
