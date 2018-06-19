@@ -13,7 +13,7 @@
     <% end %>
   </div>
   <% if params[:arrid].present? %>
-    <div> Arriendo listo, revise su email para confirmar sus detalles! </div>
+    <div> Arriendo listo, revise su email para confirmarlo! </div>
     <% send_email(Arriendo.find(params[:arrid])) %>
   <% end %>
   <% if user_signed_in?%>

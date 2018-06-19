@@ -31,13 +31,11 @@
       </div>
 
       <div class="field" style="padding-top:8px">
-        <%= f.label "Fecha de Uso" %>
-        <%= f.hidden_field :fecha, :value => Arriendo.find(params[:arr]).nropedido.fecha %>
+        <%= f.hidden_field :fecha, :value => Arriendo.find(params[:arr]).fecha %>
       </div>
 
       <div class="field" style="padding-top:8px">
-        <%= f.label "Dias de Uso" %>
-        <%= f.hidden_field :dias, :value => Arriendo.find(params[:arr]).nropedido.dias %>
+        <%= f.hidden_field :dias, :value => Arriendo.find(params[:arr]).dias %>
       </div>
 
     <% else %>

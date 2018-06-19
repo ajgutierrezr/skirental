@@ -46,15 +46,31 @@
             <tr>
               <td class = "container" style="max-width:200px;" ><%= "Snowforecast" %></td>
               <td class = "container" style="background-color: #428bca"><%= home.snowforecast %></td>
+              <td>
+                <% if user_signed_in? %>
+                  <% if current_user.admin %>
+                    <%= link_to 'Editar', edit_home_path(home) %>
+                  <% end %>
+                <% end %>
+              </td>
             </tr>
           <tr>
               <td class = "container" style="max-width: 200px;"><%= "Condiciones del camino" %></td>
               <td class = "container" style="background-color: #428bca"><%= home.camino %></td>
+              <td>
+                <% if user_signed_in? %>
+                  <% if current_user.admin %>
+                    <%= link_to 'Editar', edit_home_path(home) %>
+                  <% end %>
+                <% end %>
+              </td>
             </tr>
         <% end %>
-        <% if user_signed_in? %>
-          <% if current_user.admin %>
-            <p><%= link_to 'Editar', edit_home_path(home) %></p>
+        <% if @homes.count < 1 %>
+          <% if user_signed_in? %>
+            <% if current_user.admin %>
+              <%= link_to 'Agregar Snowforecast', new_home_path %>
+            <% end %>
           <% end %>
         <% end %>
       </tbody>

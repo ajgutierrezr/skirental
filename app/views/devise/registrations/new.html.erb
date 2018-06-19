@@ -35,6 +35,11 @@
     </div>
 
     <div class="field" style="padding-top:8px">
+      <%= f.hidden_field :admin, value: true  %>
+    </div>
+
+
+    <div class="field" style="padding-top:8px">
       <%= f.label "Fecha de nacimiento" %>
       <%= f.date_select :nac, {order: [:day, :month, :year], prompt: {day: 'Dia', month: 'Mes', year: 'Año'}, start_year: Date.today.year - 80, end_year: Date.today.year}, :required => true %>
     </div>

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180609230422) do
+ActiveRecord::Schema.define(version: 20180614041358) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -52,6 +52,7 @@ ActiveRecord::Schema.define(version: 20180609230422) do
     t.integer  "experience",     default: 1
     t.integer  "talla_parka",    default: 0
     t.integer  "talla_pantalon", default: 0
+    t.boolean  "endof"
   end
 
   create_table "checkins", force: :cascade do |t|

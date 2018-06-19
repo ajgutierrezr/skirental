@@ -42,7 +42,7 @@ class ArriendosController < ApplicationController
       end
     end
 
-    (1..@arriendo.cantidad).each do |arriendo2|
+    (1..(@arriendo.cantidad-1)).each do |arriendo2|
       arriendo2 = Arriendo.new
       arriendo2.talla = @arriendo.talla
       arriendo2.talla_parka = @arriendo.talla_parka

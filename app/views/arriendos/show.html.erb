@@ -32,5 +32,5 @@
   <% else %>
     Puedes agregar mas ordenes a tu arriendo si te registras!
   <% end %>
-    <%= link_to 'Terminar pedido', arriendos_path(arrid: => @arriendo.id) %>
+    <%= link_to 'Terminar pedido', arriendos_path(:arrid => @arriendo.id) %>
 </div>
