@@ -23,13 +23,12 @@
           <%= f.label 'Clave' %> <i>(En blanco si no la cambias)</i><br />
           <%= f.password_field :password, autocomplete: "off" %>
           <% if @minimum_password_length %>
-            <br />
             <em><%= @minimum_password_length %> caracteres minimo</em>
           <% end %>
         </div>
 
         <div class="field" style="padding-top:8px">
-          <%= f.label 'Confirmar Clave' %><br />
+          <%= f.label 'Confirmar Clave' %>
           <%= f.password_field :password_confirmation, autocomplete: "off" %>
         </div>
 
@@ -79,7 +78,7 @@
         </div>
 
         <div class="field" style="padding-top:8px">
-          <%= f.label 'Talla de pantalon' %>
+          <%= f.label 'Talla de pantalón' %>
           <%= f.number_field :talla_pantalon, :min => 1 %>
         </div>
 
@@ -87,7 +86,7 @@
         </br>
 
         <div class="field" style="padding-top:8px">
-          <%= f.label "Clave Actual" %><br />
+          <%= f.label "Clave Actual" %>
           <%= f.password_field :current_password, autocomplete: "off" %>
         </div>
 
@@ -105,7 +104,7 @@
           <%= devise_error_messages! %>
 
           <div class="field" style="padding-top:10px">
-            <%= f.label 'Codigo de reserva' %>
+            <%= f.label 'Código de reserva' %>
             <%= f.text_field :linker %>
           </div>
 

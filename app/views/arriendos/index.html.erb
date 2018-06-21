@@ -22,9 +22,9 @@
         <table class="table table-striped">
           <thead>
             <tr>
-              <th>Nropedido</th>
+              <th>Código de arriendo</th>
               <th>Fecha</th>
-              <th>user</th>
+              <th>Usuario</th>
               <th colspan="3"></th>
             </tr>
           </thead>
@@ -38,9 +38,9 @@
                       <td><%= arriendo.nropedido %></td>
                       <td><%= arriendo.fecha.to_formatted_s(:long) %></td>
                       <td><%= arriendo.user_id %></td>
-                      <td><%= link_to 'Mostrar', arriendo_path(arriendo) %></td>
-                      <td><%= link_to 'Editar', edit_arriendo_path(arriendo) %></td>
-                      <td><%= link_to 'Eliminar', arriendo, method: :delete, data: { confirm: 'Seguro?' } %></td>
+                      <td><%= link_to 'Ver Arriendo', arriendo_path(arriendo), :class=>"btn btn-primary btn-2" %></td>
+                      <td><%= link_to 'Hacer Check In', edit_arriendo_path(arriendo), :class=>"btn btn-primary btn-2" %></td>
+                      <td><%= link_to 'Eliminar Arriendo', arriendo, method: :delete, data: { confirm: 'Seguro?' }, :class=>"btn btn-primary btn-2" %></td>
                     </tr>
                     <% @repeat.push(arriendo.nropedido) %>
                   <% end %>
@@ -55,14 +55,16 @@
     <br>
     </br>
 
-    <%= link_to 'Continuar arrendando', equipos_path %>
+    <div>
+      <table>
+        <td> <%= link_to 'Hacer otro arriendo', equipos_path, :class=>"btn btn-primary btn-2", style="padding-right:10px" %> </td>
 
-    <br>
-    </br>
-    <%= link_to 'Unir arriendo a tu cuenta', edit_user_registration_path(:act => "link") %>
+        <td> <%= link_to 'Unir arriendo a tu cuenta', edit_user_registration_path(:act => "link"), :class=>"btn btn-primary btn-2" %> </td>
+      </table>
+    </div>
 
   <% else %>
-    <%= "Puedes realizar check-in previo si te registras! Tendras todo listo al llegar" %>
+    <%= "Puedes realizar check-in previo si te registras! Tendrás todo listo al llegar" %>
 
   <% end %>
 </div>

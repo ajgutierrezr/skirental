@@ -49,14 +49,14 @@
       </div>
 
       <div class="field" style="padding-top:8px">
-        <%= f.label "Dias de Uso" %>
+        <%= f.label "Días de Uso" %>
         <%= f.number_field :dias %>
       </div>
 
     <% end %>
 
     <div class="actions" style="padding-top:10px">
-      <%= f.submit %>
+      <%= f.submit 'Arrendar' %>
     </div>
   <% else %>
 
@@ -97,7 +97,7 @@
     </div>
 
     <div class="field" style="padding-top:8px">
-      <%= f.label "Dias de Uso"%>
+      <%= f.label "Días de Uso"%>
       <%= f.number_field :dias, :min => 1 %>
     </div>
 
@@ -110,7 +110,7 @@
     </div>
 
     <div class="actions" style="padding-top:8px">
-      <%= f.submit %>
+      <%= f.submit 'Arrendar' %>
     </div>
   <% end %>
 <% end %>

@@ -8,14 +8,14 @@ class ArriendoMailer < ApplicationMailer
   def order_confirm(user, equipo, arr)
     if user != arr
       @greeting = "Hola " + user.nombre
-      @rent = "Ha arrendado equipo para la fecha: " + arr.fecha.to_formatted_s(:long) + " por " + arr.dias.to_s + " dias, y su codigo de retiro es: " + arr.nropedido
-      mail(:to => user.email, :subject => "Confirmacion de su arriendo en Rental Ski")
-      @checkin = "Para editar los detalles de su arriendo, y poder llegar directamente a buscar su equipo, puede hacer el check in en nuestra pagina"
+      @rent = "Ha arrendado equipo para la fecha: " + arr.fecha.to_formatted_s(:long) + " por " + arr.dias.to_s + " dias, y su código de retiro es: " + arr.nropedido
+      mail(:to => user.email, :subject => "Confirmación de su arriendo en Rental Ski")
+      @checkin = "Para editar los detalles de su arriendo, y poder llegar directamente a buscar su equipo, puede hacer el check in en nuestra página"
     else
-      @greeting = "Hola" + arr.nombre
-      @rent = "Ha arrendado equipo para la fecha: " + arr.fecha.to_formatted_s(:long) + " por " + arr.dias.to_s + "dias, y su codigo de retiro es: " + arr.nropedido
-      @checkin = "Para editar los detalles de su arriendo, y poder llegar directamente a buscar su equipo, debe registrarse y hacer el check in en nuestra pagina"
-      mail(:to => arr.email, :subject => "Confirmacion de su arriendo en Rental Ski")
+      @greeting = "Hola " + arr.nombre
+      @rent = "Ha arrendado equipo para la fecha: " + arr.fecha.to_formatted_s(:long) + " por " + arr.dias.to_s + "dias, y su código de retiro es: " + arr.nropedido
+      @checkin = "Para editar los detalles de su arriendo, y poder llegar directamente a buscar su equipo, debe registrarse y hacer el check in en nuestra página"
+      mail(:to => arr.email, :subject => "Confirmación de su arriendo en Rental Ski")
     end
   end
 
@@ -26,7 +26,7 @@ class ArriendoMailer < ApplicationMailer
       @n = "Nombre: " + user.nombre + " " + user.apellidopaterno + " " + user.apellidomaterno
       @f = "Fecha: " + arr.fecha.to_formatted_s(:long)
       @fr = "Fecha de retorno: " + (arr.fecha + arr.dias).to_formatted_s(:long)
-      @r = "Codigo de retiro: " + arr.nropedido
+      @r = "Código de retiro: " + arr.nropedido
       mail(:to => "rentalskichile@gmail.com", :subject => "Nuevo arriendo")
     else
       @mensaje = "Un cliente ha reservado un arriendo, los detalles son: "
@@ -34,7 +34,7 @@ class ArriendoMailer < ApplicationMailer
       @n = "Nombre: " + arr.nombre + " " + arr.apellidop + " " + arr.apellidom
       @f = "Fecha: " + arr.fecha.to_formatted_s(:long)
       @fr = "Fecha de retorno: " + (arr.fecha + arr.dias).to_formatted_s(:long)
-      @r = "Codigo de retiro: " + arr.nropedido
+      @r = "Código de retiro: " + arr.nropedido
       mail(:to => "rentalskichile@gmail.com", :subject => "Nuevo arriendo")
     end
   end
@@ -42,11 +42,11 @@ class ArriendoMailer < ApplicationMailer
   def order_reminder(user, equipo, arr)
     if user != arr
       @greeting = "Hola " + user.nombre
-      @rent = "Recuerde que ha arrendado equipo para la fecha: " + arr.fecha.to_formatted_s(:long) + " por " + arr.dias.to_s + "dias," + " y su codigo de retiro es: " + arr.nropedido
+      @rent = "Recuerde que ha arrendado equipo para la fecha: " + arr.fecha.to_formatted_s(:long) + " por " + arr.dias.to_s + "días," + " y su código de retiro es: " + arr.nropedido
       mail(:to => user.email, :subject => "Recuerdo de su arriendo en Rental Ski")
     else
       @greeting = "Hola" + arr.nombre
-      @rent = "Recuerde que ha arrendado equipo para la fecha: " + arr.fecha.to_formatted_s(:long) + " por " + arr.dias.to_s + "dias," + " y su codigo de retiro es: " + arr.nropedido
+      @rent = "Recuerde que ha arrendado equipo para la fecha: " + arr.fecha.to_formatted_s(:long) + " por " + arr.dias.to_s + "días," + " y su código de retiro es: " + arr.nropedido
       mail(:to => arr.email, :subject => "Recuerdo de su arriendo en Rental Ski")
     end
   end

@@ -18,7 +18,7 @@
       <%= f.text_field :email, :value => current_user.email %>
     </div>
     <div class="field">
-      <p><%= f.label "Escribenos!" %></p>
+      <p><%= f.label "Escríbenos!" %></p>
       <%= f.text_area :message %>
     </div>
 
@@ -26,7 +26,7 @@
       <%= f.hidden_field :user_id, :value => current_user.id %>
     </div>
 
-    <div class="actions">
+    <div class="actions" style="padding-top:10px; padding-bottom:10px;">
       <%= f.submit %>
     </div>
   <% else %>
@@ -36,7 +36,7 @@
       <%= f.text_field :email %>
     </div>
     <div class="field">
-      <p><%= f.label "Escribenos!" %></p>
+      <p><%= f.label "Escríbenos!" %></p>
       <%= f.text_area :message %>
     </div>
 

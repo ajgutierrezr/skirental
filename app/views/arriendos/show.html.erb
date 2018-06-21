@@ -17,7 +17,7 @@
             <%= "Nombre: " + arr.nombre + " " + arr.apellidop + " " + arr.apellidom %>
           </p>
           <p>
-            <%= "Numero de pedido: " + arr.nropedido %>
+            <%= "Código de arriendo: " + arr.nropedido %>
           </p>
           <p>
             <%= link_to 'Editar', edit_arriendo_path(arr, :eq => arr.equipo_id) %>
@@ -26,11 +26,11 @@
       </tr>
     <% end%>
   <% end %>
+  <div>
+    <table>
+      <td> <%= link_to 'Continuar el pedido', equipos_path(:nroarr => @arriendo.id), :class=>"btn btn-primary btn-2" %> </td>
+      <td><%= link_to 'Terminar pedido', arriendos_path(:arrid => @arriendo.id), :class=>"btn btn-primary btn-2" %></td>
+  </table>
+  </div>
 
-  <% if user_signed_in? %>
-    <%= link_to 'Continuar el pedido', equipos_path(:nroarr => @arriendo.id) %>
-  <% else %>
-    Puedes agregar mas ordenes a tu arriendo si te registras!
-  <% end %>
-    <%= link_to 'Terminar pedido', arriendos_path(:arrid => @arriendo.id) %>
 </div>
