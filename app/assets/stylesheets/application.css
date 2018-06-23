@@ -67,3 +67,24 @@ input[type=submit] {
   width: 130px;
   font-size: 20px;
 }
+
+.btn-3, .btn-group-3 > .btn {
+  padding-top: 10px;
+  height: 50px;
+  width: 160px;
+  font-size: 20px;
+}
+
+.btn-4, .btn-group-4 > .btn {
+  padding-top: 10px;
+  height: 50px;
+  width: 200px;
+  font-size: 20px;
+}
+
+.btn-5, .btn-group-5 > .btn {
+  padding-top: 10px;
+  height: 50px;
+  width: 250px;
+  font-size: 20px;
+}
