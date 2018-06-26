@@ -39,9 +39,9 @@
             </td>
             <!-- <td><%= equipo.stock %></td> -->
             <% if params[:nroarr].present? %>
-              <td style="vertical-align: middle"><%= link_to 'Arrendar', new_arriendo_path(:eq => equipo.id, :arr => Arriendo.find(params[:nroarr]).id), :class=>"btn btn-primary btn-2"  %></td>
+              <td style="vertical-align: middle"><%= link_to 'Reservar', new_arriendo_path(:eq => equipo.id, :arr => Arriendo.find(params[:nroarr]).id), :class=>"btn btn-primary btn-2"  %></td>
             <% else %>
-              <td style="vertical-align: middle"><%= link_to 'Arrendar', new_arriendo_path(:eq => equipo.id), :class=>"btn btn-primary btn-2"  %></td>
+              <td style="vertical-align: middle"><%= link_to 'Reservar', new_arriendo_path(:eq => equipo.id), :class=>"btn btn-primary btn-2"  %></td>
             <% end %>
             <% if user_signed_in? %>
               <% if current_user.admin %>

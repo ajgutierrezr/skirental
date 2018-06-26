@@ -4,7 +4,7 @@
 <div class="container">
   <p id="notice"><%= notice %></p>
 
-  <h1>Arriendos</h1>
+  <h1>Reservas</h1>
   <div>
     <% if user_signed_in? %>
       <% if current_user.linker != nil %>
@@ -16,55 +16,60 @@
     <div> Arriendo listo, revise su email para confirmarlo! </div>
     <% send_email(Arriendo.find(params[:arrid])) %>
   <% end %>
-  <% if user_signed_in?%>
-    <div class="container">
-      <div class="table-responsive">
-        <table class="table table-striped">
-          <thead>
-            <tr>
-              <th>Código de arriendo</th>
-              <th>Fecha</th>
-              <th>Usuario</th>
-              <th colspan="3"></th>
-            </tr>
-          </thead>
-          <tbody>
-            <% @repeat = Array.new %>
-            <% @arriendos.order('fecha').each do |arriendo| %>
-              <% if DateTime.now < arriendo.fecha %>
-                <% if current_user.id == arriendo.user_id || current_user.admin %>
-                  <% if @repeat.include?(arriendo.nropedido) == false %>
-                    <tr>
-                      <td><%= arriendo.nropedido %></td>
-                      <td><%= arriendo.fecha.to_formatted_s(:long) %></td>
-                      <td><%= arriendo.user_id %></td>
-                      <td><%= link_to 'Ver Arriendo', arriendo_path(arriendo), :class=>"btn btn-primary btn-2" %></td>
-                      <td><%= link_to 'Hacer Check In', edit_arriendo_path(arriendo), :class=>"btn btn-primary btn-2" %></td>
-                      <td><%= link_to 'Eliminar Arriendo', arriendo, method: :delete, data: { confirm: 'Seguro?' }, :class=>"btn btn-primary btn-2" %></td>
-                    </tr>
-                    <% @repeat.push(arriendo.nropedido) %>
+  <% activo = false %>
+  <%if activo%>
+    <% if user_signed_in?%>
+      <div class="container">
+        <div class="table-responsive">
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th>Código de arriendo</th>
+                <th>Fecha</th>
+                <th>Usuario</th>
+                <th colspan="3"></th>
+              </tr>
+            </thead>
+            <tbody>
+              <% @repeat = Array.new %>
+              <% @arriendos.order('fecha').each do |arriendo| %>
+                <% if DateTime.now < arriendo.fecha %>
+                  <% if current_user.id == arriendo.user_id || current_user.admin %>
+                    <% if @repeat.include?(arriendo.nropedido) == false %>
+                      <tr>
+                        <td><%= arriendo.nropedido %></td>
+                        <td><%= arriendo.fecha.to_formatted_s(:long) %></td>
+                        <td><%= arriendo.user_id %></td>
+                        <td><%= link_to 'Ver Arriendo', arriendo_path(arriendo), :class=>"btn btn-primary btn-2" %></td>
+                        <td><%= link_to 'Hacer Check In', edit_arriendo_path(arriendo), :class=>"btn btn-primary btn-2" %></td>
+                        <td><%= link_to 'Eliminar Arriendo', arriendo, method: :delete, data: { confirm: 'Seguro?' }, :class=>"btn btn-primary btn-2" %></td>
+                      </tr>
+                      <% @repeat.push(arriendo.nropedido) %>
+                    <% end %>
                   <% end %>
                 <% end %>
               <% end %>
-            <% end %>
-          </tbody>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <br>
+      </br>
+
+      <div>
+        <table>
+          <td> <%= link_to 'Hacer otro arriendo', equipos_path, :class=>"btn btn-primary btn-4", :style=>"padding-right:10px" %> </td>
+
+          <td> <%= link_to 'Unir arriendo a tu cuenta', edit_user_registration_path(:act => "link"), :class=>"btn btn-primary btn-5" %> </td>
         </table>
       </div>
-    </div>
 
-    <br>
-    </br>
+    <% else %>
+      <%= "Puedes realizar check-in previo si te registras! Tendrás todo listo al llegar" %>
 
-    <div>
-      <table>
-        <td> <%= link_to 'Hacer otro arriendo', equipos_path, :class=>"btn btn-primary btn-4", :style=>"padding-right:10px" %> </td>
-
-        <td> <%= link_to 'Unir arriendo a tu cuenta', edit_user_registration_path(:act => "link"), :class=>"btn btn-primary btn-5" %> </td>
-      </table>
-    </div>
-
-  <% else %>
-    <%= "Puedes realizar check-in previo si te registras! Tendrás todo listo al llegar" %>
-
-  <% end %>
-</div>
+    <% end %>
+  </div>
+<%else%>
+  <%= "Pronto existirá la opción de check in para que disfrutes de tu equipo a la medida" %>
+<%end%>
