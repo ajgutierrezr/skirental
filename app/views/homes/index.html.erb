@@ -56,13 +56,13 @@
             <tr style="border: 3px solid black;">
               <td class = "container" style="max-width:200px;border: 3px solid black;" ><%= "Snowforecast" %></td>
               <td class = "container" style="background-color: #428bca;border: 1px solid black"><%= home.snowforecast %></td>
-              <td>
                 <% if user_signed_in? %>
                   <% if current_user.admin %>
-                    <%= link_to 'Editar', edit_home_path(home) %>
+                    <td>
+                      <%= link_to 'Editar', edit_home_path(home) %>
+                    </td>
                   <% end %>
                 <% end %>
-              </td>
             </tr>
           <tr style="border: 3px solid black;">
               <td class = "container" style="max-width: 200px;border: 3px solid black"><%= "Condiciones del camino" %></td>
