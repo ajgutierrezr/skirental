@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :nuestro_equipos
   resources :homes
   resources :contacts
   resources :checkins
