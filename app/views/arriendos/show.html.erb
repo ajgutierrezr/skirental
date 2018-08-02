@@ -1,10 +1,10 @@
 <br>
 </br>
-<div class="container">
-  <p id="notice"><%= notice %></p>
-
+<% if params[:deleted].present? %>
+  <h1>Eliminados<h1>
+  <%@nro = @arriendo.nropedido%>
   <% Arriendo.all.each do |arr| %>
-    <% if arr.nropedido == @arriendo.nropedido %>
+    <% if arr.nropedido == @nro%>
       <tr>
         <div  class = "jumbotron" style="background-color: #ffcc66">
           <strong> <%= Equipo.find(arr.equipo_id).name %> </strong>
@@ -20,16 +20,41 @@
             <%= "Código de arriendo: " + arr.nropedido %>
           </p>
         </div>
+        <% arr.destroy %>
       </tr>
-    <% end %>
-  <% end %>
-  <div>
-    <table>
-      <td> <%= link_to 'Continuar el pedido', equipos_path(:nroarr => @arriendo.id), :class=>"btn btn-primary btn-4" %> </td>
-      <td><%= link_to 'Terminar pedido', arriendos_path(:arrid => @arriendo.id), :class=>"btn btn-primary btn-3" %></td>
-  </table>
-  </div>
+    <%end%>
+  <%end%>
+<%else%>
+  <div class="container">
+    <p id="notice"><%= notice %></p>
 
+    <% Arriendo.all.each do |arr| %>
+      <% if arr.nropedido == @arriendo.nropedido %>
+        <tr>
+          <div  class = "jumbotron" style="background-color: #ffcc66">
+            <strong> <%= Equipo.find(arr.equipo_id).name %> </strong>
+            <br>
+            </br>
+            <p>
+              <%= "Fecha de uso: " + arr.fecha.to_s %>
+            </p>
+            <p>
+              <%= "Nombre: " + arr.nombre + " " + arr.apellidop + " " + arr.apellidom %>
+            </p>
+            <p>
+              <%= "Código de arriendo: " + arr.nropedido %>
+            </p>
+          </div>
+        </tr>
+      <% end %>
+    <% end %>
+    <div>
+      <table>
+        <td> <%= link_to 'Continuar el pedido', equipos_path(:nroarr => @arriendo.id), :class=>"btn btn-primary btn-4" %> </td>
+        <td><%= link_to 'Terminar pedido', arriendos_path(:arrid => @arriendo.id), :class=>"btn btn-primary btn-3" %></td>
+    </table>
+    </div>
+<%end%>
 </div>
 <br>
 </br>

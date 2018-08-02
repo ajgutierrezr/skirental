@@ -54085,3 +54085,1679 @@ Processing by ArriendosController#index as HTML
 Completed 200 OK in 56ms (Views: 39.0ms | ActiveRecord: 6.2ms)
 
 
+Started GET "/terminos" for 127.0.0.1 at 2018-07-15 17:15:15 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (6.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/alejandro/Downloads/skirental/app/controllers/application_controller.rb:4)
+Processing by TerminosController#index as HTML
+  Rendering terminos/index.html.erb within layouts/application
+  Rendered terminos/index.html.erb within layouts/application (11.3ms)
+  [1m[36mUser Load (6.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (5.3ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = $1, "last_sign_in_at" = $2, "sign_in_count" = $3, "updated_at" = $4 WHERE "users"."id" = $5[0m  [["current_sign_in_at", "2018-07-15 21:15:18.248204"], ["last_sign_in_at", "2018-07-04 23:33:47.361991"], ["sign_in_count", 3], ["updated_at", "2018-07-15 21:15:18.251672"], ["id", 19]]
+  [1m[35m (8.2ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 2569ms (Views: 2328.1ms | ActiveRecord: 35.9ms)
+
+
+Started GET "/informacions" for 127.0.0.1 at 2018-07-15 17:15:19 -0400
+Processing by InformacionsController#index as HTML
+  Rendering informacions/index.html.erb within layouts/application
+  Rendered informacions/index.html.erb within layouts/application (0.7ms)
+  [1m[36mUser Load (38.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+Completed 200 OK in 307ms (Views: 245.1ms | ActiveRecord: 38.8ms)
+
+
+Started GET "/informacions" for 127.0.0.1 at 2018-07-15 17:18:21 -0400
+Processing by InformacionsController#index as HTML
+  Rendering informacions/index.html.erb within layouts/application
+  Rendered informacions/index.html.erb within layouts/application (5.0ms)
+  [1m[36mUser Load (3.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+Completed 200 OK in 44ms (Views: 39.0ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/informacions" for 127.0.0.1 at 2018-07-15 17:19:45 -0400
+Processing by InformacionsController#index as HTML
+  Rendering informacions/index.html.erb within layouts/application
+  Rendered informacions/index.html.erb within layouts/application (0.5ms)
+  [1m[36mUser Load (5.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+Completed 200 OK in 67ms (Views: 60.0ms | ActiveRecord: 5.4ms)
+
+
+Started GET "/informacions" for 127.0.0.1 at 2018-07-15 17:20:26 -0400
+Processing by InformacionsController#index as HTML
+  Rendering informacions/index.html.erb within layouts/application
+  Rendered informacions/index.html.erb within layouts/application (4.0ms)
+  [1m[36mUser Load (6.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+Completed 200 OK in 102ms (Views: 95.0ms | ActiveRecord: 6.1ms)
+
+
+Started GET "/informacions" for 127.0.0.1 at 2018-07-15 17:23:36 -0400
+Processing by InformacionsController#index as HTML
+  Rendering informacions/index.html.erb within layouts/application
+  Rendered informacions/index.html.erb within layouts/application (6.1ms)
+  [1m[36mUser Load (3.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+Completed 200 OK in 42ms (Views: 33.1ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/informacions" for 127.0.0.1 at 2018-07-15 17:24:00 -0400
+Processing by InformacionsController#index as HTML
+  Rendering informacions/index.html.erb within layouts/application
+  Rendered informacions/index.html.erb within layouts/application (0.5ms)
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+Completed 200 OK in 64ms (Views: 46.2ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-30 02:26:59 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (2.6ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/alejandro/Downloads/skirental/app/controllers/application_controller.rb:4)
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  [1m[36mHome Load (8.8ms)[0m  [1m[34mSELECT "homes".* FROM "homes"[0m
+  [1m[36mUser Load (13.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "homes"[0m
+  Rendered homes/index.html.erb within layouts/application (147.7ms)
+Completed 200 OK in 778ms (Views: 681.8ms | ActiveRecord: 40.5ms)
+
+
+Started GET "/arriendos" for 127.0.0.1 at 2018-07-30 02:27:08 -0400
+Processing by ArriendosController#index as HTML
+  Rendering arriendos/index.html.erb within layouts/application
+  [1m[36mUser Load (4.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+  [1m[36mArriendo Load (2.6ms)[0m  [1m[34mSELECT "arriendos".* FROM "arriendos" ORDER BY fecha[0m
+  Rendered arriendos/index.html.erb within layouts/application (122.3ms)
+Completed 200 OK in 161ms (Views: 125.8ms | ActiveRecord: 10.0ms)
+
+
+Started GET "/arriendos/41" for 127.0.0.1 at 2018-07-30 02:27:20 -0400
+Processing by ArriendosController#show as HTML
+  Parameters: {"id"=>"41"}
+  [1m[36mArriendo Load (0.4ms)[0m  [1m[34mSELECT  "arriendos".* FROM "arriendos" WHERE "arriendos"."id" = $1 LIMIT $2[0m  [["id", 41], ["LIMIT", 1]]
+  Rendering arriendos/show.html.erb within layouts/application
+  [1m[36mArriendo Load (0.5ms)[0m  [1m[34mSELECT "arriendos".* FROM "arriendos"[0m
+  [1m[36mEquipo Load (5.8ms)[0m  [1m[34mSELECT  "equipos".* FROM "equipos" WHERE "equipos"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "equipos".* FROM "equipos" WHERE "equipos"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mEquipo Load (3.2ms)[0m  [1m[34mSELECT  "equipos".* FROM "equipos" WHERE "equipos"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "equipos".* FROM "equipos" WHERE "equipos"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered arriendos/show.html.erb within layouts/application (51.7ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+Completed 200 OK in 101ms (Views: 62.6ms | ActiveRecord: 13.2ms)
+
+
+Started GET "/arriendos" for 127.0.0.1 at 2018-07-30 02:27:34 -0400
+Processing by ArriendosController#index as HTML
+  Rendering arriendos/index.html.erb within layouts/application
+  [1m[36mUser Load (7.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+  [1m[36mArriendo Load (0.5ms)[0m  [1m[34mSELECT "arriendos".* FROM "arriendos" ORDER BY fecha[0m
+  Rendered arriendos/index.html.erb within layouts/application (30.0ms)
+Completed 200 OK in 55ms (Views: 46.4ms | ActiveRecord: 7.6ms)
+
+
+Started GET "/arriendos/41" for 127.0.0.1 at 2018-07-30 02:27:39 -0400
+Processing by ArriendosController#show as HTML
+  Parameters: {"id"=>"41"}
+  [1m[36mArriendo Load (5.7ms)[0m  [1m[34mSELECT  "arriendos".* FROM "arriendos" WHERE "arriendos"."id" = $1 LIMIT $2[0m  [["id", 41], ["LIMIT", 1]]
+  Rendering arriendos/show.html.erb within layouts/application
+  [1m[36mArriendo Load (3.0ms)[0m  [1m[34mSELECT "arriendos".* FROM "arriendos"[0m
+  [1m[36mEquipo Load (8.9ms)[0m  [1m[34mSELECT  "equipos".* FROM "equipos" WHERE "equipos"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "equipos".* FROM "equipos" WHERE "equipos"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mEquipo Load (2.3ms)[0m  [1m[34mSELECT  "equipos".* FROM "equipos" WHERE "equipos"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "equipos".* FROM "equipos" WHERE "equipos"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered arriendos/show.html.erb within layouts/application (27.6ms)
+  [1m[36mUser Load (2.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+Completed 200 OK in 100ms (Views: 70.8ms | ActiveRecord: 22.6ms)
+
+
+Started GET "/arriendos" for 127.0.0.1 at 2018-07-30 02:27:43 -0400
+Processing by ArriendosController#index as HTML
+  Rendering arriendos/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+  [1m[36mArriendo Load (0.5ms)[0m  [1m[34mSELECT "arriendos".* FROM "arriendos" ORDER BY fecha[0m
+  Rendered arriendos/index.html.erb within layouts/application (29.7ms)
+Completed 200 OK in 53ms (Views: 50.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/arriendos/41" for 127.0.0.1 at 2018-07-30 02:27:49 -0400
+Processing by ArriendosController#show as HTML
+  Parameters: {"id"=>"41"}
+  [1m[36mArriendo Load (4.6ms)[0m  [1m[34mSELECT  "arriendos".* FROM "arriendos" WHERE "arriendos"."id" = $1 LIMIT $2[0m  [["id", 41], ["LIMIT", 1]]
+  Rendering arriendos/show.html.erb within layouts/application
+  [1m[36mArriendo Load (4.9ms)[0m  [1m[34mSELECT "arriendos".* FROM "arriendos"[0m
+  [1m[36mEquipo Load (1.2ms)[0m  [1m[34mSELECT  "equipos".* FROM "equipos" WHERE "equipos"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "equipos".* FROM "equipos" WHERE "equipos"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mEquipo Load (0.3ms)[0m  [1m[34mSELECT  "equipos".* FROM "equipos" WHERE "equipos"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "equipos".* FROM "equipos" WHERE "equipos"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered arriendos/show.html.erb within layouts/application (24.9ms)
+  [1m[36mUser Load (2.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+Completed 200 OK in 92ms (Views: 72.6ms | ActiveRecord: 13.7ms)
+
+
+Started GET "/arriendos" for 127.0.0.1 at 2018-07-30 02:30:23 -0400
+Processing by ArriendosController#index as HTML
+  Rendering arriendos/index.html.erb within layouts/application
+  [1m[36mUser Load (3.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+  [1m[36mArriendo Load (11.9ms)[0m  [1m[34mSELECT "arriendos".* FROM "arriendos" ORDER BY fecha[0m
+  Rendered arriendos/index.html.erb within layouts/application (91.9ms)
+Completed 200 OK in 131ms (Views: 113.8ms | ActiveRecord: 15.7ms)
+
+
+Started GET "/arriendos/37" for 127.0.0.1 at 2018-07-30 02:30:38 -0400
+Processing by ArriendosController#show as HTML
+  Parameters: {"id"=>"37"}
+  [1m[36mArriendo Load (3.6ms)[0m  [1m[34mSELECT  "arriendos".* FROM "arriendos" WHERE "arriendos"."id" = $1 LIMIT $2[0m  [["id", 37], ["LIMIT", 1]]
+  Rendering arriendos/show.html.erb within layouts/application
+  [1m[36mArriendo Load (6.0ms)[0m  [1m[34mSELECT "arriendos".* FROM "arriendos"[0m
+  [1m[36mEquipo Load (1.5ms)[0m  [1m[34mSELECT  "equipos".* FROM "equipos" WHERE "equipos"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "equipos".* FROM "equipos" WHERE "equipos"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered arriendos/show.html.erb within layouts/application (25.1ms)
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+Completed 200 OK in 84ms (Views: 67.8ms | ActiveRecord: 12.6ms)
+
+
+Started GET "/arriendos" for 127.0.0.1 at 2018-07-30 02:31:11 -0400
+Processing by ArriendosController#index as HTML
+  Rendering arriendos/index.html.erb within layouts/application
+  [1m[36mUser Load (6.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+  [1m[36mArriendo Load (2.3ms)[0m  [1m[34mSELECT "arriendos".* FROM "arriendos" ORDER BY fecha[0m
+  Rendered arriendos/index.html.erb within layouts/application (21.7ms)
+Completed 200 OK in 59ms (Views: 45.5ms | ActiveRecord: 8.5ms)
+
+
+Started GET "/arriendos/37" for 127.0.0.1 at 2018-07-30 02:31:17 -0400
+Processing by ArriendosController#show as HTML
+  Parameters: {"id"=>"37"}
+  [1m[36mArriendo Load (4.2ms)[0m  [1m[34mSELECT  "arriendos".* FROM "arriendos" WHERE "arriendos"."id" = $1 LIMIT $2[0m  [["id", 37], ["LIMIT", 1]]
+  Rendering arriendos/show.html.erb within layouts/application
+  [1m[36mArriendo Load (1.7ms)[0m  [1m[34mSELECT "arriendos".* FROM "arriendos"[0m
+  [1m[36mEquipo Load (3.9ms)[0m  [1m[34mSELECT  "equipos".* FROM "equipos" WHERE "equipos"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "equipos".* FROM "equipos" WHERE "equipos"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered arriendos/show.html.erb within layouts/application (18.4ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+Completed 200 OK in 69ms (Views: 50.9ms | ActiveRecord: 10.3ms)
+
+
+Started GET "/arriendos" for 127.0.0.1 at 2018-07-30 02:31:21 -0400
+Processing by ArriendosController#index as HTML
+  Rendering arriendos/index.html.erb within layouts/application
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+  [1m[36mArriendo Load (1.1ms)[0m  [1m[34mSELECT "arriendos".* FROM "arriendos" ORDER BY fecha[0m
+  Rendered arriendos/index.html.erb within layouts/application (28.2ms)
+Completed 200 OK in 60ms (Views: 55.7ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/arriendos/37" for 127.0.0.1 at 2018-07-30 02:31:23 -0400
+Processing by ArriendosController#show as HTML
+  Parameters: {"id"=>"37"}
+  [1m[36mArriendo Load (7.5ms)[0m  [1m[34mSELECT  "arriendos".* FROM "arriendos" WHERE "arriendos"."id" = $1 LIMIT $2[0m  [["id", 37], ["LIMIT", 1]]
+  Rendering arriendos/show.html.erb within layouts/application
+  [1m[36mArriendo Load (0.5ms)[0m  [1m[34mSELECT "arriendos".* FROM "arriendos"[0m
+  [1m[36mEquipo Load (4.0ms)[0m  [1m[34mSELECT  "equipos".* FROM "equipos" WHERE "equipos"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "equipos".* FROM "equipos" WHERE "equipos"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered arriendos/show.html.erb within layouts/application (15.3ms)
+  [1m[36mUser Load (3.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+Completed 200 OK in 78ms (Views: 47.7ms | ActiveRecord: 15.7ms)
+
+
+Started GET "/arriendos" for 127.0.0.1 at 2018-07-30 02:32:35 -0400
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/alejandro/Downloads/skirental/app/controllers/application_controller.rb:4)
+Processing by ArriendosController#index as HTML
+  Rendering arriendos/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+  [1m[36mArriendo Load (6.0ms)[0m  [1m[34mSELECT "arriendos".* FROM "arriendos" ORDER BY fecha[0m
+  Rendered arriendos/index.html.erb within layouts/application (113.0ms)
+Completed 200 OK in 195ms (Views: 152.8ms | ActiveRecord: 17.9ms)
+
+
+Started GET "/arriendos/41" for 127.0.0.1 at 2018-07-30 02:32:38 -0400
+Processing by ArriendosController#show as HTML
+  Parameters: {"id"=>"41"}
+  [1m[36mArriendo Load (2.2ms)[0m  [1m[34mSELECT  "arriendos".* FROM "arriendos" WHERE "arriendos"."id" = $1 LIMIT $2[0m  [["id", 41], ["LIMIT", 1]]
+  Rendering arriendos/show.html.erb within layouts/application
+  [1m[36mArriendo Load (4.1ms)[0m  [1m[34mSELECT "arriendos".* FROM "arriendos"[0m
+  [1m[36mEquipo Load (0.2ms)[0m  [1m[34mSELECT  "equipos".* FROM "equipos" WHERE "equipos"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "equipos".* FROM "equipos" WHERE "equipos"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mEquipo Load (3.2ms)[0m  [1m[34mSELECT  "equipos".* FROM "equipos" WHERE "equipos"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "equipos".* FROM "equipos" WHERE "equipos"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered arriendos/show.html.erb within layouts/application (51.6ms)
+  [1m[36mUser Load (2.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+Completed 200 OK in 102ms (Views: 76.5ms | ActiveRecord: 14.3ms)
+
+
+Started GET "/arriendos" for 127.0.0.1 at 2018-07-30 02:32:40 -0400
+Processing by ArriendosController#index as HTML
+  Rendering arriendos/index.html.erb within layouts/application
+  [1m[36mUser Load (4.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+  [1m[36mArriendo Load (0.5ms)[0m  [1m[34mSELECT "arriendos".* FROM "arriendos" ORDER BY fecha[0m
+  Rendered arriendos/index.html.erb within layouts/application (23.6ms)
+Completed 200 OK in 39ms (Views: 32.8ms | ActiveRecord: 5.2ms)
+
+
+Started GET "/arriendos/37" for 127.0.0.1 at 2018-07-30 02:32:43 -0400
+Processing by ArriendosController#show as HTML
+  Parameters: {"id"=>"37"}
+  [1m[36mArriendo Load (8.4ms)[0m  [1m[34mSELECT  "arriendos".* FROM "arriendos" WHERE "arriendos"."id" = $1 LIMIT $2[0m  [["id", 37], ["LIMIT", 1]]
+  Rendering arriendos/show.html.erb within layouts/application
+  [1m[36mArriendo Load (1.1ms)[0m  [1m[34mSELECT "arriendos".* FROM "arriendos"[0m
+  [1m[36mEquipo Load (1.5ms)[0m  [1m[34mSELECT  "equipos".* FROM "equipos" WHERE "equipos"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "equipos".* FROM "equipos" WHERE "equipos"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered arriendos/show.html.erb within layouts/application (21.5ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+Completed 200 OK in 71ms (Views: 53.2ms | ActiveRecord: 11.6ms)
+
+
+Started GET "/arriendos" for 127.0.0.1 at 2018-07-30 02:32:46 -0400
+Processing by ArriendosController#index as HTML
+  Rendering arriendos/index.html.erb within layouts/application
+  [1m[36mUser Load (5.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+  [1m[36mArriendo Load (5.0ms)[0m  [1m[34mSELECT "arriendos".* FROM "arriendos" ORDER BY fecha[0m
+  Rendered arriendos/index.html.erb within layouts/application (24.4ms)
+Completed 200 OK in 45ms (Views: 33.4ms | ActiveRecord: 10.1ms)
+
+
+Started GET "/arriendos/37" for 127.0.0.1 at 2018-07-30 02:32:49 -0400
+Processing by ArriendosController#show as HTML
+  Parameters: {"id"=>"37"}
+  [1m[36mArriendo Load (1.0ms)[0m  [1m[34mSELECT  "arriendos".* FROM "arriendos" WHERE "arriendos"."id" = $1 LIMIT $2[0m  [["id", 37], ["LIMIT", 1]]
+  Rendering arriendos/show.html.erb within layouts/application
+  [1m[36mArriendo Load (9.9ms)[0m  [1m[34mSELECT "arriendos".* FROM "arriendos"[0m
+  [1m[36mEquipo Load (2.8ms)[0m  [1m[34mSELECT  "equipos".* FROM "equipos" WHERE "equipos"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "equipos".* FROM "equipos" WHERE "equipos"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered arriendos/show.html.erb within layouts/application (36.9ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+Completed 200 OK in 99ms (Views: 81.1ms | ActiveRecord: 14.1ms)
+
+
+Started GET "/arriendos" for 127.0.0.1 at 2018-07-30 02:32:52 -0400
+Processing by ArriendosController#index as HTML
+  Rendering arriendos/index.html.erb within layouts/application
+  [1m[36mUser Load (9.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+  [1m[36mArriendo Load (0.5ms)[0m  [1m[34mSELECT "arriendos".* FROM "arriendos" ORDER BY fecha[0m
+  Rendered arriendos/index.html.erb within layouts/application (24.2ms)
+Completed 200 OK in 66ms (Views: 55.5ms | ActiveRecord: 9.6ms)
+
+
+Started GET "/arriendos/37" for 127.0.0.1 at 2018-07-30 02:32:54 -0400
+Processing by ArriendosController#show as HTML
+  Parameters: {"id"=>"37"}
+  [1m[36mArriendo Load (1.8ms)[0m  [1m[34mSELECT  "arriendos".* FROM "arriendos" WHERE "arriendos"."id" = $1 LIMIT $2[0m  [["id", 37], ["LIMIT", 1]]
+  Rendering arriendos/show.html.erb within layouts/application
+  [1m[36mArriendo Load (4.8ms)[0m  [1m[34mSELECT "arriendos".* FROM "arriendos"[0m
+  [1m[36mEquipo Load (0.3ms)[0m  [1m[34mSELECT  "equipos".* FROM "equipos" WHERE "equipos"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.1ms)[0m  [1m[34mSELECT  "equipos".* FROM "equipos" WHERE "equipos"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered arriendos/show.html.erb within layouts/application (18.5ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+Completed 200 OK in 51ms (Views: 38.0ms | ActiveRecord: 7.5ms)
+
+
+Started GET "/arriendos" for 127.0.0.1 at 2018-07-30 02:34:21 -0400
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/alejandro/Downloads/skirental/app/controllers/application_controller.rb:4)
+Processing by ArriendosController#index as HTML
+  Rendering arriendos/index.html.erb within layouts/application
+  [1m[36mUser Load (3.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+  [1m[36mArriendo Load (4.5ms)[0m  [1m[34mSELECT "arriendos".* FROM "arriendos" ORDER BY fecha[0m
+  Rendered arriendos/index.html.erb within layouts/application (112.7ms)
+Completed 200 OK in 152ms (Views: 121.9ms | ActiveRecord: 16.0ms)
+
+
+Started GET "/arriendos/41" for 127.0.0.1 at 2018-07-30 02:34:23 -0400
+Processing by ArriendosController#show as HTML
+  Parameters: {"id"=>"41"}
+  [1m[36mArriendo Load (0.5ms)[0m  [1m[34mSELECT  "arriendos".* FROM "arriendos" WHERE "arriendos"."id" = $1 LIMIT $2[0m  [["id", 41], ["LIMIT", 1]]
+  Rendering arriendos/show.html.erb within layouts/application
+  [1m[36mArriendo Load (2.9ms)[0m  [1m[34mSELECT "arriendos".* FROM "arriendos"[0m
+  [1m[36mEquipo Load (0.2ms)[0m  [1m[34mSELECT  "equipos".* FROM "equipos" WHERE "equipos"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "equipos".* FROM "equipos" WHERE "equipos"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mEquipo Load (0.4ms)[0m  [1m[34mSELECT  "equipos".* FROM "equipos" WHERE "equipos"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "equipos".* FROM "equipos" WHERE "equipos"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered arriendos/show.html.erb within layouts/application (58.7ms)
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+Completed 200 OK in 100ms (Views: 75.4ms | ActiveRecord: 15.0ms)
+
+
+Started GET "/arriendos" for 127.0.0.1 at 2018-07-30 02:34:25 -0400
+Processing by ArriendosController#index as HTML
+  Rendering arriendos/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+  [1m[36mArriendo Load (1.6ms)[0m  [1m[34mSELECT "arriendos".* FROM "arriendos" ORDER BY fecha[0m
+  Rendered arriendos/index.html.erb within layouts/application (35.8ms)
+Completed 200 OK in 65ms (Views: 61.0ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/arriendos/37" for 127.0.0.1 at 2018-07-30 02:34:28 -0400
+Processing by ArriendosController#show as HTML
+  Parameters: {"id"=>"37"}
+  [1m[36mArriendo Load (13.7ms)[0m  [1m[34mSELECT  "arriendos".* FROM "arriendos" WHERE "arriendos"."id" = $1 LIMIT $2[0m  [["id", 37], ["LIMIT", 1]]
+  Rendering arriendos/show.html.erb within layouts/application
+  [1m[36mArriendo Load (2.6ms)[0m  [1m[34mSELECT "arriendos".* FROM "arriendos"[0m
+  [1m[36mEquipo Load (0.3ms)[0m  [1m[34mSELECT  "equipos".* FROM "equipos" WHERE "equipos"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "equipos".* FROM "equipos" WHERE "equipos"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered arriendos/show.html.erb within layouts/application (29.5ms)
+  [1m[36mUser Load (3.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+Completed 200 OK in 84ms (Views: 56.0ms | ActiveRecord: 20.0ms)
+
+
+Started GET "/arriendos" for 127.0.0.1 at 2018-07-30 02:34:31 -0400
+Processing by ArriendosController#index as HTML
+  Rendering arriendos/index.html.erb within layouts/application
+  [1m[36mUser Load (5.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+  [1m[36mArriendo Load (0.5ms)[0m  [1m[34mSELECT "arriendos".* FROM "arriendos" ORDER BY fecha[0m
+  Rendered arriendos/index.html.erb within layouts/application (26.7ms)
+Completed 200 OK in 55ms (Views: 47.8ms | ActiveRecord: 5.6ms)
+
+
+Started GET "/arriendos/37" for 127.0.0.1 at 2018-07-30 02:34:33 -0400
+Processing by ArriendosController#show as HTML
+  Parameters: {"id"=>"37"}
+  [1m[36mArriendo Load (2.4ms)[0m  [1m[34mSELECT  "arriendos".* FROM "arriendos" WHERE "arriendos"."id" = $1 LIMIT $2[0m  [["id", 37], ["LIMIT", 1]]
+  Rendering arriendos/show.html.erb within layouts/application
+  [1m[36mArriendo Load (0.5ms)[0m  [1m[34mSELECT "arriendos".* FROM "arriendos"[0m
+  [1m[36mEquipo Load (1.5ms)[0m  [1m[34mSELECT  "equipos".* FROM "equipos" WHERE "equipos"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "equipos".* FROM "equipos" WHERE "equipos"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered arriendos/show.html.erb within layouts/application (10.3ms)
+  [1m[36mUser Load (3.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+Completed 200 OK in 39ms (Views: 28.2ms | ActiveRecord: 7.7ms)
+
+
+Started GET "/arriendos" for 127.0.0.1 at 2018-07-30 02:34:40 -0400
+Processing by ArriendosController#index as HTML
+  Rendering arriendos/index.html.erb within layouts/application
+  [1m[36mUser Load (9.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+  [1m[36mArriendo Load (0.5ms)[0m  [1m[34mSELECT "arriendos".* FROM "arriendos" ORDER BY fecha[0m
+  Rendered arriendos/index.html.erb within layouts/application (27.5ms)
+Completed 200 OK in 51ms (Views: 40.6ms | ActiveRecord: 9.7ms)
+
+
+Started GET "/arriendos/37" for 127.0.0.1 at 2018-07-30 02:34:43 -0400
+Processing by ArriendosController#show as HTML
+  Parameters: {"id"=>"37"}
+  [1m[36mArriendo Load (0.4ms)[0m  [1m[34mSELECT  "arriendos".* FROM "arriendos" WHERE "arriendos"."id" = $1 LIMIT $2[0m  [["id", 37], ["LIMIT", 1]]
+  Rendering arriendos/show.html.erb within layouts/application
+  [1m[36mArriendo Load (0.4ms)[0m  [1m[34mSELECT "arriendos".* FROM "arriendos"[0m
+  [1m[36mEquipo Load (0.2ms)[0m  [1m[34mSELECT  "equipos".* FROM "equipos" WHERE "equipos"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "equipos".* FROM "equipos" WHERE "equipos"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered arriendos/show.html.erb within layouts/application (10.2ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+Completed 200 OK in 42ms (Views: 33.9ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/arriendos" for 127.0.0.1 at 2018-07-30 02:34:47 -0400
+Processing by ArriendosController#index as HTML
+  Rendering arriendos/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+  [1m[36mArriendo Load (0.4ms)[0m  [1m[34mSELECT "arriendos".* FROM "arriendos" ORDER BY fecha[0m
+  Rendered arriendos/index.html.erb within layouts/application (16.9ms)
+Completed 200 OK in 56ms (Views: 54.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/arriendos/41" for 127.0.0.1 at 2018-07-30 02:39:48 -0400
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/alejandro/Downloads/skirental/app/controllers/application_controller.rb:4)
+Processing by ArriendosController#show as HTML
+  Parameters: {"id"=>"41"}
+  [1m[36mArriendo Load (0.2ms)[0m  [1m[34mSELECT  "arriendos".* FROM "arriendos" WHERE "arriendos"."id" = $1 LIMIT $2[0m  [["id", 41], ["LIMIT", 1]]
+  Rendering arriendos/show.html.erb within layouts/application
+  [1m[36mArriendo Load (0.5ms)[0m  [1m[34mSELECT "arriendos".* FROM "arriendos"[0m
+  [1m[36mEquipo Load (0.1ms)[0m  [1m[34mSELECT  "equipos".* FROM "equipos" WHERE "equipos"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "equipos".* FROM "equipos" WHERE "equipos"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mEquipo Load (0.2ms)[0m  [1m[34mSELECT  "equipos".* FROM "equipos" WHERE "equipos"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "equipos".* FROM "equipos" WHERE "equipos"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered arriendos/show.html.erb within layouts/application (39.5ms)
+Completed 500 Internal Server Error in 269ms (ActiveRecord: 13.1ms)
+
+
+  
+ActionView::Template::Error (Asset was not declared to be precompiled in production.
+Add `Rails.application.config.assets.precompile += %w( jquery_ujs.js )` to `config/initializers/assets.rb` and restart your server):
+     6:     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.css">
+     7:     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap-theme.css">
+     8:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     9:     <%= javascript_include_tag "jquery_ujs" %>
+    10:   </head>
+    11: 
+    12:   <body>
+  
+app/views/layouts/application.html.erb:9:in `_app_views_layouts_application_html_erb___1138258741351160355_69811238007680'
+  Rendering /home/alejandro/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /home/alejandro/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/alejandro/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (7.8ms)
+  Rendering /home/alejandro/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/alejandro/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendering /home/alejandro/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/alejandro/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/alejandro/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (81.6ms)
+Started GET "/arriendos" for 127.0.0.1 at 2018-07-30 02:42:20 -0400
+Processing by ArriendosController#index as HTML
+  Rendering arriendos/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+  [1m[36mArriendo Load (0.8ms)[0m  [1m[34mSELECT "arriendos".* FROM "arriendos" ORDER BY fecha[0m
+  Rendered arriendos/index.html.erb within layouts/application (101.6ms)
+Completed 200 OK in 173ms (Views: 159.8ms | ActiveRecord: 8.8ms)
+
+
+Started GET "/arriendos/41" for 127.0.0.1 at 2018-07-30 02:42:22 -0400
+Processing by ArriendosController#show as HTML
+  Parameters: {"id"=>"41"}
+  [1m[36mArriendo Load (0.8ms)[0m  [1m[34mSELECT  "arriendos".* FROM "arriendos" WHERE "arriendos"."id" = $1 LIMIT $2[0m  [["id", 41], ["LIMIT", 1]]
+  Rendering arriendos/show.html.erb within layouts/application
+  [1m[36mArriendo Load (3.6ms)[0m  [1m[34mSELECT "arriendos".* FROM "arriendos"[0m
+  [1m[36mEquipo Load (0.2ms)[0m  [1m[34mSELECT  "equipos".* FROM "equipos" WHERE "equipos"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "equipos".* FROM "equipos" WHERE "equipos"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mEquipo Load (2.1ms)[0m  [1m[34mSELECT  "equipos".* FROM "equipos" WHERE "equipos"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "equipos".* FROM "equipos" WHERE "equipos"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered arriendos/show.html.erb within layouts/application (62.2ms)
+  [1m[36mUser Load (6.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+Completed 200 OK in 113ms (Views: 91.9ms | ActiveRecord: 12.9ms)
+
+
+Started GET "/arriendos" for 127.0.0.1 at 2018-07-30 02:42:26 -0400
+Processing by ArriendosController#index as HTML
+  Rendering arriendos/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+  [1m[36mArriendo Load (3.3ms)[0m  [1m[34mSELECT "arriendos".* FROM "arriendos" ORDER BY fecha[0m
+  Rendered arriendos/index.html.erb within layouts/application (26.0ms)
+Completed 200 OK in 51ms (Views: 42.3ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/arriendos/37" for 127.0.0.1 at 2018-07-30 02:42:29 -0400
+Processing by ArriendosController#show as HTML
+  Parameters: {"id"=>"37"}
+  [1m[36mArriendo Load (7.1ms)[0m  [1m[34mSELECT  "arriendos".* FROM "arriendos" WHERE "arriendos"."id" = $1 LIMIT $2[0m  [["id", 37], ["LIMIT", 1]]
+  Rendering arriendos/show.html.erb within layouts/application
+  [1m[36mArriendo Load (2.7ms)[0m  [1m[34mSELECT "arriendos".* FROM "arriendos"[0m
+  [1m[36mEquipo Load (4.3ms)[0m  [1m[34mSELECT  "equipos".* FROM "equipos" WHERE "equipos"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "equipos".* FROM "equipos" WHERE "equipos"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered arriendos/show.html.erb within layouts/application (24.1ms)
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+Completed 200 OK in 79ms (Views: 54.7ms | ActiveRecord: 16.1ms)
+
+
+Started GET "/arriendos" for 127.0.0.1 at 2018-07-30 02:42:32 -0400
+Processing by ArriendosController#index as HTML
+  Rendering arriendos/index.html.erb within layouts/application
+  [1m[36mUser Load (3.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+  [1m[36mArriendo Load (1.4ms)[0m  [1m[34mSELECT "arriendos".* FROM "arriendos" ORDER BY fecha[0m
+  Rendered arriendos/index.html.erb within layouts/application (20.1ms)
+Completed 200 OK in 53ms (Views: 40.6ms | ActiveRecord: 4.4ms)
+
+
+Started GET "/arriendos/41" for 127.0.0.1 at 2018-07-30 02:44:15 -0400
+Processing by ArriendosController#show as HTML
+  Parameters: {"id"=>"41"}
+  [1m[36mArriendo Load (0.5ms)[0m  [1m[34mSELECT  "arriendos".* FROM "arriendos" WHERE "arriendos"."id" = $1 LIMIT $2[0m  [["id", 41], ["LIMIT", 1]]
+  Rendering arriendos/show.html.erb within layouts/application
+  [1m[36mArriendo Load (4.4ms)[0m  [1m[34mSELECT "arriendos".* FROM "arriendos"[0m
+  [1m[36mEquipo Load (6.2ms)[0m  [1m[34mSELECT  "equipos".* FROM "equipos" WHERE "equipos"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "equipos".* FROM "equipos" WHERE "equipos"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mEquipo Load (3.2ms)[0m  [1m[34mSELECT  "equipos".* FROM "equipos" WHERE "equipos"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "equipos".* FROM "equipos" WHERE "equipos"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered arriendos/show.html.erb within layouts/application (64.8ms)
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+Completed 200 OK in 125ms (Views: 101.0ms | ActiveRecord: 15.6ms)
+
+
+Started GET "/arriendos" for 127.0.0.1 at 2018-07-30 02:44:19 -0400
+Processing by ArriendosController#index as HTML
+  Rendering arriendos/index.html.erb within layouts/application
+  [1m[36mUser Load (6.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+  [1m[36mArriendo Load (1.9ms)[0m  [1m[34mSELECT "arriendos".* FROM "arriendos" ORDER BY fecha[0m
+  Rendered arriendos/index.html.erb within layouts/application (29.2ms)
+Completed 200 OK in 56ms (Views: 47.2ms | ActiveRecord: 8.0ms)
+
+
+Started GET "/arriendos/37" for 127.0.0.1 at 2018-07-30 02:44:22 -0400
+Processing by ArriendosController#show as HTML
+  Parameters: {"id"=>"37"}
+  [1m[36mArriendo Load (0.4ms)[0m  [1m[34mSELECT  "arriendos".* FROM "arriendos" WHERE "arriendos"."id" = $1 LIMIT $2[0m  [["id", 37], ["LIMIT", 1]]
+  Rendering arriendos/show.html.erb within layouts/application
+  [1m[36mArriendo Load (3.2ms)[0m  [1m[34mSELECT "arriendos".* FROM "arriendos"[0m
+  [1m[36mEquipo Load (5.9ms)[0m  [1m[34mSELECT  "equipos".* FROM "equipos" WHERE "equipos"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "equipos".* FROM "equipos" WHERE "equipos"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered arriendos/show.html.erb within layouts/application (18.1ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+Completed 200 OK in 57ms (Views: 36.4ms | ActiveRecord: 10.0ms)
+
+
+Started GET "/arriendos" for 127.0.0.1 at 2018-07-30 02:44:25 -0400
+Processing by ArriendosController#index as HTML
+  Rendering arriendos/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+  [1m[36mArriendo Load (0.5ms)[0m  [1m[34mSELECT "arriendos".* FROM "arriendos" ORDER BY fecha[0m
+  Rendered arriendos/index.html.erb within layouts/application (28.5ms)
+Completed 200 OK in 44ms (Views: 42.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/arriendos/37" for 127.0.0.1 at 2018-07-30 02:44:26 -0400
+Processing by ArriendosController#show as HTML
+  Parameters: {"id"=>"37"}
+  [1m[36mArriendo Load (0.9ms)[0m  [1m[34mSELECT  "arriendos".* FROM "arriendos" WHERE "arriendos"."id" = $1 LIMIT $2[0m  [["id", 37], ["LIMIT", 1]]
+  Rendering arriendos/show.html.erb within layouts/application
+  [1m[36mArriendo Load (0.5ms)[0m  [1m[34mSELECT "arriendos".* FROM "arriendos"[0m
+  [1m[36mEquipo Load (1.5ms)[0m  [1m[34mSELECT  "equipos".* FROM "equipos" WHERE "equipos"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "equipos".* FROM "equipos" WHERE "equipos"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered arriendos/show.html.erb within layouts/application (15.5ms)
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+Completed 200 OK in 41ms (Views: 31.0ms | ActiveRecord: 4.7ms)
+
+
+Started GET "/arriendos" for 127.0.0.1 at 2018-07-30 02:44:29 -0400
+Processing by ArriendosController#index as HTML
+  Rendering arriendos/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+  [1m[36mArriendo Load (0.5ms)[0m  [1m[34mSELECT "arriendos".* FROM "arriendos" ORDER BY fecha[0m
+  Rendered arriendos/index.html.erb within layouts/application (36.1ms)
+Completed 200 OK in 68ms (Views: 65.3ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-30 02:49:12 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (4.7ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/alejandro/Downloads/skirental/app/controllers/application_controller.rb:4)
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  [1m[36mHome Load (3.5ms)[0m  [1m[34mSELECT "homes".* FROM "homes"[0m
+  [1m[35m (6.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "homes"[0m
+  Rendered homes/index.html.erb within layouts/application (58.3ms)
+Completed 200 OK in 1258ms (Views: 1200.7ms | ActiveRecord: 19.3ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-07-30 02:49:19 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (67.4ms)
+Completed 200 OK in 182ms (Views: 126.4ms | ActiveRecord: 3.3ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2018-07-30 02:49:26 -0400
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ut8eyQExK1Tt44YJaRjVfPT+oz9noZuUAr4c/W4V+cvuu5+AKDpM9R+nTf491KNqxOvGqrAsfe2PhjQRqQXQDw==", "user"=>{"email"=>"admin@admin", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"Iniciar Sesión"}
+  [1m[36mUser Load (13.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "admin@admin"], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (2.6ms)[0m  [1m[33mUPDATE "users" SET "updated_at" = $1, "sign_in_count" = $2, "current_sign_in_at" = $3, "last_sign_in_at" = $4 WHERE "users"."id" = $5[0m  [["updated_at", "2018-07-30 06:49:27.398766"], ["sign_in_count", 4], ["current_sign_in_at", "2018-07-30 06:49:27.396172"], ["last_sign_in_at", "2018-07-15 21:15:18.248204"], ["id", 19]]
+  [1m[35m (6.4ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 500ms (ActiveRecord: 23.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-30 02:49:27 -0400
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  [1m[36mHome Load (3.5ms)[0m  [1m[34mSELECT "homes".* FROM "homes"[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "homes"[0m
+  Rendered homes/index.html.erb within layouts/application (16.4ms)
+Completed 200 OK in 36ms (Views: 30.7ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/arriendos" for 127.0.0.1 at 2018-07-30 02:49:29 -0400
+Processing by ArriendosController#index as HTML
+  Rendering arriendos/index.html.erb within layouts/application
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+  [1m[36mArriendo Load (6.0ms)[0m  [1m[34mSELECT "arriendos".* FROM "arriendos" ORDER BY fecha[0m
+  Rendered arriendos/index.html.erb within layouts/application (55.8ms)
+Completed 200 OK in 115ms (Views: 62.4ms | ActiveRecord: 11.1ms)
+
+
+Started GET "/arriendos/37" for 127.0.0.1 at 2018-07-30 02:49:33 -0400
+Processing by ArriendosController#show as HTML
+  Parameters: {"id"=>"37"}
+  [1m[36mArriendo Load (0.3ms)[0m  [1m[34mSELECT  "arriendos".* FROM "arriendos" WHERE "arriendos"."id" = $1 LIMIT $2[0m  [["id", 37], ["LIMIT", 1]]
+  Rendering arriendos/show.html.erb within layouts/application
+  [1m[36mArriendo Load (0.5ms)[0m  [1m[34mSELECT "arriendos".* FROM "arriendos"[0m
+  [1m[36mEquipo Load (1.6ms)[0m  [1m[34mSELECT  "equipos".* FROM "equipos" WHERE "equipos"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "equipos".* FROM "equipos" WHERE "equipos"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered arriendos/show.html.erb within layouts/application (58.3ms)
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+Completed 200 OK in 102ms (Views: 74.0ms | ActiveRecord: 8.8ms)
+
+
+Started GET "/arriendos" for 127.0.0.1 at 2018-07-30 02:49:36 -0400
+Processing by ArriendosController#index as HTML
+  Rendering arriendos/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+  [1m[36mArriendo Load (0.6ms)[0m  [1m[34mSELECT "arriendos".* FROM "arriendos" ORDER BY fecha[0m
+  Rendered arriendos/index.html.erb within layouts/application (22.0ms)
+Completed 200 OK in 50ms (Views: 45.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/arriendos/37" for 127.0.0.1 at 2018-07-30 02:49:39 -0400
+Processing by ArriendosController#show as HTML
+  Parameters: {"id"=>"37"}
+  [1m[36mArriendo Load (8.7ms)[0m  [1m[34mSELECT  "arriendos".* FROM "arriendos" WHERE "arriendos"."id" = $1 LIMIT $2[0m  [["id", 37], ["LIMIT", 1]]
+  Rendering arriendos/show.html.erb within layouts/application
+  [1m[36mArriendo Load (7.3ms)[0m  [1m[34mSELECT "arriendos".* FROM "arriendos"[0m
+  [1m[36mEquipo Load (4.8ms)[0m  [1m[34mSELECT  "equipos".* FROM "equipos" WHERE "equipos"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "equipos".* FROM "equipos" WHERE "equipos"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered arriendos/show.html.erb within layouts/application (26.3ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+Completed 200 OK in 66ms (Views: 38.3ms | ActiveRecord: 21.2ms)
+
+
+Started GET "/arriendos" for 127.0.0.1 at 2018-07-30 02:49:55 -0400
+Processing by ArriendosController#index as HTML
+  Rendering arriendos/index.html.erb within layouts/application
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+  [1m[36mArriendo Load (2.0ms)[0m  [1m[34mSELECT "arriendos".* FROM "arriendos" ORDER BY fecha[0m
+  Rendered arriendos/index.html.erb within layouts/application (26.8ms)
+Completed 200 OK in 75ms (Views: 69.4ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/arriendos/37" for 127.0.0.1 at 2018-07-30 02:49:57 -0400
+Processing by ArriendosController#show as HTML
+  Parameters: {"id"=>"37"}
+  [1m[36mArriendo Load (0.7ms)[0m  [1m[34mSELECT  "arriendos".* FROM "arriendos" WHERE "arriendos"."id" = $1 LIMIT $2[0m  [["id", 37], ["LIMIT", 1]]
+  Rendering arriendos/show.html.erb within layouts/application
+  [1m[36mArriendo Load (1.0ms)[0m  [1m[34mSELECT "arriendos".* FROM "arriendos"[0m
+  [1m[36mEquipo Load (1.1ms)[0m  [1m[34mSELECT  "equipos".* FROM "equipos" WHERE "equipos"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "equipos".* FROM "equipos" WHERE "equipos"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered arriendos/show.html.erb within layouts/application (25.7ms)
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+Completed 200 OK in 62ms (Views: 54.4ms | ActiveRecord: 4.6ms)
+
+
+Started GET "/arriendos" for 127.0.0.1 at 2018-07-30 02:49:59 -0400
+Processing by ArriendosController#index as HTML
+  Rendering arriendos/index.html.erb within layouts/application
+  [1m[36mUser Load (5.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+  [1m[36mArriendo Load (0.5ms)[0m  [1m[34mSELECT "arriendos".* FROM "arriendos" ORDER BY fecha[0m
+  Rendered arriendos/index.html.erb within layouts/application (21.1ms)
+Completed 200 OK in 41ms (Views: 34.4ms | ActiveRecord: 5.9ms)
+
+
+Started GET "/arriendos" for 127.0.0.1 at 2018-07-30 02:56:05 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/alejandro/Downloads/skirental/app/controllers/application_controller.rb:4)
+Processing by ArriendosController#index as HTML
+  Rendering arriendos/index.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+  [1m[36mArriendo Load (4.7ms)[0m  [1m[34mSELECT "arriendos".* FROM "arriendos" ORDER BY fecha[0m
+  Rendered arriendos/index.html.erb within layouts/application (152.6ms)
+Completed 200 OK in 805ms (Views: 742.0ms | ActiveRecord: 15.5ms)
+
+
+Started GET "/arriendos/41" for 127.0.0.1 at 2018-07-30 02:56:08 -0400
+Processing by ArriendosController#show as HTML
+  Parameters: {"id"=>"41"}
+  [1m[36mArriendo Load (0.4ms)[0m  [1m[34mSELECT  "arriendos".* FROM "arriendos" WHERE "arriendos"."id" = $1 LIMIT $2[0m  [["id", 41], ["LIMIT", 1]]
+  Rendering arriendos/show.html.erb within layouts/application
+  [1m[36mArriendo Load (0.5ms)[0m  [1m[34mSELECT "arriendos".* FROM "arriendos"[0m
+  [1m[36mEquipo Load (3.4ms)[0m  [1m[34mSELECT  "equipos".* FROM "equipos" WHERE "equipos"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "equipos".* FROM "equipos" WHERE "equipos"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mEquipo Load (0.3ms)[0m  [1m[34mSELECT  "equipos".* FROM "equipos" WHERE "equipos"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "equipos".* FROM "equipos" WHERE "equipos"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered arriendos/show.html.erb within layouts/application (36.6ms)
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+Completed 200 OK in 109ms (Views: 69.2ms | ActiveRecord: 10.6ms)
+
+
+Started GET "/arriendos" for 127.0.0.1 at 2018-07-30 02:56:15 -0400
+Processing by ArriendosController#index as HTML
+  Rendering arriendos/index.html.erb within layouts/application
+  [1m[36mUser Load (4.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+  [1m[36mArriendo Load (4.0ms)[0m  [1m[34mSELECT "arriendos".* FROM "arriendos" ORDER BY fecha[0m
+  Rendered arriendos/index.html.erb within layouts/application (30.4ms)
+Completed 200 OK in 72ms (Views: 62.5ms | ActiveRecord: 8.7ms)
+
+
+Started GET "/arriendos/37" for 127.0.0.1 at 2018-07-30 02:56:18 -0400
+Processing by ArriendosController#show as HTML
+  Parameters: {"id"=>"37"}
+  [1m[36mArriendo Load (1.1ms)[0m  [1m[34mSELECT  "arriendos".* FROM "arriendos" WHERE "arriendos"."id" = $1 LIMIT $2[0m  [["id", 37], ["LIMIT", 1]]
+  Rendering arriendos/show.html.erb within layouts/application
+  [1m[36mArriendo Load (4.6ms)[0m  [1m[34mSELECT "arriendos".* FROM "arriendos"[0m
+  [1m[36mEquipo Load (1.7ms)[0m  [1m[34mSELECT  "equipos".* FROM "equipos" WHERE "equipos"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "equipos".* FROM "equipos" WHERE "equipos"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered arriendos/show.html.erb within layouts/application (41.2ms)
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+Completed 200 OK in 79ms (Views: 66.9ms | ActiveRecord: 8.7ms)
+
+
+Started GET "/arriendos" for 127.0.0.1 at 2018-07-30 02:56:22 -0400
+Processing by ArriendosController#index as HTML
+  Rendering arriendos/index.html.erb within layouts/application
+  [1m[36mUser Load (3.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+  [1m[36mArriendo Load (1.3ms)[0m  [1m[34mSELECT "arriendos".* FROM "arriendos" ORDER BY fecha[0m
+  Rendered arriendos/index.html.erb within layouts/application (32.4ms)
+Completed 200 OK in 76ms (Views: 69.9ms | ActiveRecord: 5.1ms)
+
+
+Started GET "/arriendos/37" for 127.0.0.1 at 2018-07-30 02:56:26 -0400
+Processing by ArriendosController#show as HTML
+  Parameters: {"id"=>"37"}
+  [1m[36mArriendo Load (17.7ms)[0m  [1m[34mSELECT  "arriendos".* FROM "arriendos" WHERE "arriendos"."id" = $1 LIMIT $2[0m  [["id", 37], ["LIMIT", 1]]
+  Rendering arriendos/show.html.erb within layouts/application
+  [1m[36mArriendo Load (2.3ms)[0m  [1m[34mSELECT "arriendos".* FROM "arriendos"[0m
+  [1m[36mEquipo Load (0.4ms)[0m  [1m[34mSELECT  "equipos".* FROM "equipos" WHERE "equipos"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "equipos".* FROM "equipos" WHERE "equipos"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered arriendos/show.html.erb within layouts/application (14.5ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+Completed 200 OK in 61ms (Views: 37.6ms | ActiveRecord: 20.9ms)
+
+
+Started GET "/arriendos" for 127.0.0.1 at 2018-07-31 19:16:53 -0400
+Processing by ArriendosController#index as HTML
+  Rendering arriendos/index.html.erb within layouts/application
+  [1m[36mUser Load (15.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+  [1m[36mArriendo Load (2.0ms)[0m  [1m[34mSELECT "arriendos".* FROM "arriendos" ORDER BY fecha[0m
+  Rendered arriendos/index.html.erb within layouts/application (98.1ms)
+Completed 200 OK in 143ms (Views: 120.0ms | ActiveRecord: 17.3ms)
+
+
+Started GET "/arriendos/41" for 127.0.0.1 at 2018-07-31 19:16:56 -0400
+Processing by ArriendosController#show as HTML
+  Parameters: {"id"=>"41"}
+  [1m[36mArriendo Load (9.8ms)[0m  [1m[34mSELECT  "arriendos".* FROM "arriendos" WHERE "arriendos"."id" = $1 LIMIT $2[0m  [["id", 41], ["LIMIT", 1]]
+  Rendering arriendos/show.html.erb within layouts/application
+  [1m[36mArriendo Load (2.0ms)[0m  [1m[34mSELECT "arriendos".* FROM "arriendos"[0m
+  [1m[36mEquipo Load (6.7ms)[0m  [1m[34mSELECT  "equipos".* FROM "equipos" WHERE "equipos"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "equipos".* FROM "equipos" WHERE "equipos"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mEquipo Load (0.6ms)[0m  [1m[34mSELECT  "equipos".* FROM "equipos" WHERE "equipos"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "equipos".* FROM "equipos" WHERE "equipos"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered arriendos/show.html.erb within layouts/application (27.9ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+Completed 200 OK in 122ms (Views: 84.5ms | ActiveRecord: 19.6ms)
+
+
+Started GET "/arriendos" for 127.0.0.1 at 2018-07-31 19:17:11 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/alejandro/Downloads/skirental/app/controllers/application_controller.rb:4)
+Processing by ArriendosController#index as HTML
+  Rendering arriendos/index.html.erb within layouts/application
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+  [1m[36mArriendo Load (1.0ms)[0m  [1m[34mSELECT "arriendos".* FROM "arriendos" ORDER BY fecha[0m
+  Rendered arriendos/index.html.erb within layouts/application (185.5ms)
+Completed 200 OK in 970ms (Views: 880.0ms | ActiveRecord: 15.3ms)
+
+
+Started GET "/arriendos/41" for 127.0.0.1 at 2018-07-31 19:17:15 -0400
+Processing by ArriendosController#show as HTML
+  Parameters: {"id"=>"41"}
+  [1m[36mArriendo Load (0.3ms)[0m  [1m[34mSELECT  "arriendos".* FROM "arriendos" WHERE "arriendos"."id" = $1 LIMIT $2[0m  [["id", 41], ["LIMIT", 1]]
+  Rendering arriendos/show.html.erb within layouts/application
+  [1m[36mArriendo Load (0.5ms)[0m  [1m[34mSELECT "arriendos".* FROM "arriendos"[0m
+  [1m[36mEquipo Load (0.4ms)[0m  [1m[34mSELECT  "equipos".* FROM "equipos" WHERE "equipos"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "equipos".* FROM "equipos" WHERE "equipos"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mEquipo Load (0.3ms)[0m  [1m[34mSELECT  "equipos".* FROM "equipos" WHERE "equipos"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "equipos".* FROM "equipos" WHERE "equipos"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered arriendos/show.html.erb within layouts/application (45.2ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+Completed 200 OK in 134ms (Views: 110.1ms | ActiveRecord: 7.7ms)
+
+
+Started GET "/arriendos" for 127.0.0.1 at 2018-07-31 19:19:23 -0400
+Processing by ArriendosController#index as HTML
+  Rendering arriendos/index.html.erb within layouts/application
+  [1m[36mUser Load (2.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+  [1m[36mArriendo Load (0.7ms)[0m  [1m[34mSELECT "arriendos".* FROM "arriendos" ORDER BY fecha[0m
+  Rendered arriendos/index.html.erb within layouts/application (20.6ms)
+Completed 200 OK in 40ms (Views: 34.0ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/arriendos/41" for 127.0.0.1 at 2018-07-31 19:19:25 -0400
+Processing by ArriendosController#show as HTML
+  Parameters: {"id"=>"41"}
+  [1m[36mArriendo Load (1.9ms)[0m  [1m[34mSELECT  "arriendos".* FROM "arriendos" WHERE "arriendos"."id" = $1 LIMIT $2[0m  [["id", 41], ["LIMIT", 1]]
+  Rendering arriendos/show.html.erb within layouts/application
+  [1m[36mArriendo Load (1.9ms)[0m  [1m[34mSELECT "arriendos".* FROM "arriendos"[0m
+  [1m[36mEquipo Load (2.1ms)[0m  [1m[34mSELECT  "equipos".* FROM "equipos" WHERE "equipos"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "equipos".* FROM "equipos" WHERE "equipos"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mEquipo Load (1.3ms)[0m  [1m[34mSELECT  "equipos".* FROM "equipos" WHERE "equipos"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "equipos".* FROM "equipos" WHERE "equipos"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered arriendos/show.html.erb within layouts/application (28.9ms)
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+Completed 200 OK in 97ms (Views: 63.4ms | ActiveRecord: 8.8ms)
+
+
+Started GET "/equipos" for 127.0.0.1 at 2018-07-31 19:19:29 -0400
+Processing by EquiposController#index as HTML
+  Rendering equipos/index.html.erb within layouts/application
+  [1m[36mEquipo Load (0.4ms)[0m  [1m[34mSELECT "equipos".* FROM "equipos" ORDER BY price DESC[0m
+  [1m[36mUser Load (3.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+  Rendered equipos/index.html.erb within layouts/application (14.0ms)
+Completed 200 OK in 44ms (Views: 34.2ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-31 19:19:31 -0400
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  [1m[36mHome Load (4.5ms)[0m  [1m[34mSELECT "homes".* FROM "homes"[0m
+  [1m[36mUser Load (8.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+  [1m[35m (2.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "homes"[0m
+  Rendered homes/index.html.erb within layouts/application (31.9ms)
+Completed 200 OK in 71ms (Views: 46.5ms | ActiveRecord: 17.9ms)
+
+
+Started GET "/arriendos" for 127.0.0.1 at 2018-07-31 19:19:32 -0400
+Processing by ArriendosController#index as HTML
+  Rendering arriendos/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+  [1m[36mArriendo Load (0.6ms)[0m  [1m[34mSELECT "arriendos".* FROM "arriendos" ORDER BY fecha[0m
+  Rendered arriendos/index.html.erb within layouts/application (18.1ms)
+Completed 200 OK in 50ms (Views: 47.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/arriendos/41" for 127.0.0.1 at 2018-07-31 19:19:35 -0400
+Processing by ArriendosController#show as HTML
+  Parameters: {"id"=>"41"}
+  [1m[36mArriendo Load (2.5ms)[0m  [1m[34mSELECT  "arriendos".* FROM "arriendos" WHERE "arriendos"."id" = $1 LIMIT $2[0m  [["id", 41], ["LIMIT", 1]]
+  Rendering arriendos/show.html.erb within layouts/application
+  [1m[36mArriendo Load (4.6ms)[0m  [1m[34mSELECT "arriendos".* FROM "arriendos"[0m
+  [1m[36mEquipo Load (6.1ms)[0m  [1m[34mSELECT  "equipos".* FROM "equipos" WHERE "equipos"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "equipos".* FROM "equipos" WHERE "equipos"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mEquipo Load (0.3ms)[0m  [1m[34mSELECT  "equipos".* FROM "equipos" WHERE "equipos"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "equipos".* FROM "equipos" WHERE "equipos"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered arriendos/show.html.erb within layouts/application (29.2ms)
+  [1m[36mUser Load (3.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+Completed 200 OK in 65ms (Views: 45.0ms | ActiveRecord: 16.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-31 19:19:55 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/alejandro/Downloads/skirental/app/controllers/application_controller.rb:4)
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  [1m[36mHome Load (5.0ms)[0m  [1m[34mSELECT "homes".* FROM "homes"[0m
+  [1m[36mUser Load (10.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+  [1m[35m (2.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (9.1ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = $1, "last_sign_in_at" = $2, "sign_in_count" = $3, "updated_at" = $4 WHERE "users"."id" = $5[0m  [["current_sign_in_at", "2018-07-31 23:19:55.758099"], ["last_sign_in_at", "2018-07-30 06:49:27.396172"], ["sign_in_count", 5], ["updated_at", "2018-07-31 23:19:55.762931"], ["id", 19]]
+  [1m[35m (4.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "homes"[0m
+  Rendered homes/index.html.erb within layouts/application (235.1ms)
+Completed 200 OK in 793ms (Views: 676.4ms | ActiveRecord: 76.7ms)
+
+
+Started GET "/arriendos" for 127.0.0.1 at 2018-07-31 19:19:58 -0400
+Processing by ArriendosController#index as HTML
+  Rendering arriendos/index.html.erb within layouts/application
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+  [1m[36mArriendo Load (2.4ms)[0m  [1m[34mSELECT "arriendos".* FROM "arriendos" ORDER BY fecha[0m
+  Rendered arriendos/index.html.erb within layouts/application (103.8ms)
+Completed 200 OK in 149ms (Views: 129.9ms | ActiveRecord: 5.7ms)
+
+
+Started GET "/arriendos/37" for 127.0.0.1 at 2018-07-31 19:20:01 -0400
+Processing by ArriendosController#show as HTML
+  Parameters: {"id"=>"37"}
+  [1m[36mArriendo Load (0.5ms)[0m  [1m[34mSELECT  "arriendos".* FROM "arriendos" WHERE "arriendos"."id" = $1 LIMIT $2[0m  [["id", 37], ["LIMIT", 1]]
+  Rendering arriendos/show.html.erb within layouts/application
+  [1m[36mArriendo Load (1.9ms)[0m  [1m[34mSELECT "arriendos".* FROM "arriendos"[0m
+  [1m[36mEquipo Load (0.4ms)[0m  [1m[34mSELECT  "equipos".* FROM "equipos" WHERE "equipos"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "equipos".* FROM "equipos" WHERE "equipos"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered arriendos/show.html.erb within layouts/application (71.6ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+Completed 200 OK in 139ms (Views: 93.3ms | ActiveRecord: 22.8ms)
+
+
+Started GET "/arriendos" for 127.0.0.1 at 2018-07-31 19:20:05 -0400
+Processing by ArriendosController#index as HTML
+  Rendering arriendos/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+  [1m[36mArriendo Load (1.3ms)[0m  [1m[34mSELECT "arriendos".* FROM "arriendos" ORDER BY fecha[0m
+  Rendered arriendos/index.html.erb within layouts/application (25.7ms)
+Completed 200 OK in 71ms (Views: 60.5ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/arriendos/41" for 127.0.0.1 at 2018-07-31 19:20:08 -0400
+Processing by ArriendosController#show as HTML
+  Parameters: {"id"=>"41"}
+  [1m[36mArriendo Load (1.7ms)[0m  [1m[34mSELECT  "arriendos".* FROM "arriendos" WHERE "arriendos"."id" = $1 LIMIT $2[0m  [["id", 41], ["LIMIT", 1]]
+  Rendering arriendos/show.html.erb within layouts/application
+  [1m[36mArriendo Load (3.4ms)[0m  [1m[34mSELECT "arriendos".* FROM "arriendos"[0m
+  [1m[36mEquipo Load (2.3ms)[0m  [1m[34mSELECT  "equipos".* FROM "equipos" WHERE "equipos"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "equipos".* FROM "equipos" WHERE "equipos"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mEquipo Load (1.8ms)[0m  [1m[34mSELECT  "equipos".* FROM "equipos" WHERE "equipos"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "equipos".* FROM "equipos" WHERE "equipos"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered arriendos/show.html.erb within layouts/application (41.1ms)
+  [1m[36mUser Load (2.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+Completed 200 OK in 82ms (Views: 61.9ms | ActiveRecord: 11.8ms)
+
+
+Started GET "/arriendos" for 127.0.0.1 at 2018-07-31 19:20:10 -0400
+Processing by ArriendosController#index as HTML
+  Rendering arriendos/index.html.erb within layouts/application
+  [1m[36mUser Load (6.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+  [1m[36mArriendo Load (1.5ms)[0m  [1m[34mSELECT "arriendos".* FROM "arriendos" ORDER BY fecha[0m
+  Rendered arriendos/index.html.erb within layouts/application (45.2ms)
+Completed 200 OK in 119ms (Views: 105.0ms | ActiveRecord: 8.2ms)
+
+
+Started GET "/arriendos/41/edit" for 127.0.0.1 at 2018-07-31 19:20:12 -0400
+Processing by ArriendosController#edit as HTML
+  Parameters: {"id"=>"41"}
+  [1m[36mArriendo Load (1.0ms)[0m  [1m[34mSELECT  "arriendos".* FROM "arriendos" WHERE "arriendos"."id" = $1 LIMIT $2[0m  [["id", 41], ["LIMIT", 1]]
+  Rendering arriendos/edit.html.erb within layouts/application
+  [1m[36mUser Load (2.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+  Rendered arriendos/_form0.html.erb (783.0ms)
+  Rendered arriendos/edit.html.erb within layouts/application (795.2ms)
+Completed 500 Internal Server Error in 820ms (ActiveRecord: 3.6ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `id' for #<#<Class:0x007f7e35b38390>:0x007f7e348c4ec0>):
+    56:     </div>
+    57: 
+    58:     <div class="field">
+    59:       <%= f.hidden_field :equipo_id, :value => id %>
+    60:     </div>
+    61: 
+    62:     <% if params[:arr].present? %>
+  
+app/views/arriendos/_form0.html.erb:59:in `block in _app_views_arriendos__form__html_erb___1423905387572898366_70090014904740'
+app/views/arriendos/_form0.html.erb:1:in `_app_views_arriendos__form__html_erb___1423905387572898366_70090014904740'
+app/views/arriendos/edit.html.erb:6:in `_app_views_arriendos_edit_html_erb___3411212767757731032_70090012111460'
+  Rendering /home/alejandro/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /home/alejandro/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/alejandro/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (31.6ms)
+  Rendering /home/alejandro/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/alejandro/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.9ms)
+  Rendering /home/alejandro/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/alejandro/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/alejandro/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (123.5ms)
+Started GET "/arriendos/41/edit" for 127.0.0.1 at 2018-07-31 19:20:22 -0400
+Processing by ArriendosController#edit as HTML
+  Parameters: {"id"=>"41"}
+  [1m[36mArriendo Load (4.2ms)[0m  [1m[34mSELECT  "arriendos".* FROM "arriendos" WHERE "arriendos"."id" = $1 LIMIT $2[0m  [["id", 41], ["LIMIT", 1]]
+  Rendering arriendos/edit.html.erb within layouts/application
+  [1m[36mUser Load (16.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+  Rendered arriendos/_form0.html.erb (657.6ms)
+  Rendered arriendos/edit.html.erb within layouts/application (662.5ms)
+Completed 500 Internal Server Error in 681ms (ActiveRecord: 20.5ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `id' for #<#<Class:0x007f7e35b38390>:0x007f7e35b42bd8>):
+    56:     </div>
+    57: 
+    58:     <div class="field">
+    59:       <%= f.hidden_field :equipo_id, :value => id %>
+    60:     </div>
+    61: 
+    62:     <% if params[:arr].present? %>
+  
+app/views/arriendos/_form0.html.erb:59:in `block in _app_views_arriendos__form__html_erb___1423905387572898366_70090021747040'
+app/views/arriendos/_form0.html.erb:1:in `_app_views_arriendos__form__html_erb___1423905387572898366_70090021747040'
+app/views/arriendos/edit.html.erb:6:in `_app_views_arriendos_edit_html_erb___3411212767757731032_70090021805620'
+  Rendering /home/alejandro/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /home/alejandro/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/alejandro/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (58.6ms)
+  Rendering /home/alejandro/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/alejandro/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendering /home/alejandro/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/alejandro/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/alejandro/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (120.0ms)
+Started GET "/arriendos" for 127.0.0.1 at 2018-07-31 19:21:56 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/alejandro/Downloads/skirental/app/controllers/application_controller.rb:4)
+Processing by ArriendosController#index as HTML
+  Rendering arriendos/index.html.erb within layouts/application
+  [1m[36mUser Load (4.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+  [1m[36mArriendo Load (2.7ms)[0m  [1m[34mSELECT "arriendos".* FROM "arriendos" ORDER BY fecha[0m
+  Rendered arriendos/index.html.erb within layouts/application (134.6ms)
+Completed 500 Internal Server Error in 199ms (ActiveRecord: 15.8ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"checkins", :deleted=>"1529438384A1"} missing required keys: [:id]):
+    101:                       <td><%= arriendo.user_id %></td>
+    102:                       <td><%= link_to 'Ver Arriendo', arriendo_path(arriendo), :class=>"btn btn-primary btn-3" %></td>
+    103:                       <td><%= link_to 'Hacer Check In', edit_arriendo_path(arriendo), :class=>"btn btn-primary btn-3" %></td>
+    104:                       <td><%= link_to 'Eliminar Arriendo', checkin_path(:deleted => arriendo.nropedido), :class=>"btn btn-primary btn-2" %></td>
+    105:                       <!-- <td><%= link_to 'Eliminar Arriendo', arriendo, method: :delete, data: { confirm: 'Seguro?' }, :class=>"btn btn-primary btn-4" %></td> -->
+    106:                     </tr>
+    107:                     <% @repeat.push(arriendo.nropedido) %>
+  
+app/views/arriendos/index.html.erb:104:in `block in _app_views_arriendos_index_html_erb___1296282639198104911_47124378550040'
+app/views/arriendos/index.html.erb:94:in `_app_views_arriendos_index_html_erb___1296282639198104911_47124378550040'
+  Rendering /home/alejandro/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /home/alejandro/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/alejandro/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (11.0ms)
+  Rendering /home/alejandro/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/alejandro/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (10.8ms)
+  Rendering /home/alejandro/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/alejandro/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (7.0ms)
+  Rendered /home/alejandro/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (89.6ms)
+Started GET "/arriendos" for 127.0.0.1 at 2018-07-31 19:26:50 -0400
+Processing by ArriendosController#index as HTML
+  Rendering arriendos/index.html.erb within layouts/application
+  [1m[36mUser Load (6.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+  [1m[36mArriendo Load (0.5ms)[0m  [1m[34mSELECT "arriendos".* FROM "arriendos" ORDER BY fecha[0m
+  Rendered arriendos/index.html.erb within layouts/application (26.7ms)
+Completed 500 Internal Server Error in 38ms (ActiveRecord: 6.5ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"checkins", :deleted=>"1529438384A1"} missing required keys: [:id]):
+    101:                       <td><%= arriendo.user_id %></td>
+    102:                       <td><%= link_to 'Ver Arriendo', arriendo_path(arriendo), :class=>"btn btn-primary btn-3" %></td>
+    103:                       <td><%= link_to 'Hacer Check In', edit_arriendo_path(arriendo), :class=>"btn btn-primary btn-3" %></td>
+    104:                       <td><%= link_to 'Eliminar Arriendo', checkin_path(:deleted => arriendo.nropedido), :class=>"btn btn-primary btn-2" %></td>
+    105:                       <!-- <td><%= link_to 'Eliminar Arriendo', arriendo, method: :delete, data: { confirm: 'Seguro?' }, :class=>"btn btn-primary btn-4" %></td> -->
+    106:                     </tr>
+    107:                     <% @repeat.push(arriendo.nropedido) %>
+  
+app/views/arriendos/index.html.erb:104:in `block in _app_views_arriendos_index_html_erb___1296282639198104911_47124377142720'
+app/views/arriendos/index.html.erb:94:in `_app_views_arriendos_index_html_erb___1296282639198104911_47124377142720'
+  Rendering /home/alejandro/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /home/alejandro/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/alejandro/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (8.2ms)
+  Rendering /home/alejandro/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/alejandro/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.9ms)
+  Rendering /home/alejandro/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/alejandro/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /home/alejandro/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (65.2ms)
+Started GET "/arriendos" for 127.0.0.1 at 2018-07-31 19:26:58 -0400
+Processing by ArriendosController#index as HTML
+  Rendering arriendos/index.html.erb within layouts/application
+  [1m[36mUser Load (12.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+  [1m[36mArriendo Load (1.7ms)[0m  [1m[34mSELECT "arriendos".* FROM "arriendos" ORDER BY fecha[0m
+  Rendered arriendos/index.html.erb within layouts/application (22.6ms)
+Completed 500 Internal Server Error in 52ms (ActiveRecord: 14.4ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"checkins", :deleted=>"1529438384A1"} missing required keys: [:id]):
+    101:                       <td><%= arriendo.user_id %></td>
+    102:                       <td><%= link_to 'Ver Arriendo', arriendo_path(arriendo), :class=>"btn btn-primary btn-3" %></td>
+    103:                       <td><%= link_to 'Hacer Check In', edit_arriendo_path(arriendo), :class=>"btn btn-primary btn-3" %></td>
+    104:                       <td><%= link_to 'Eliminar Arriendo', checkin_path(:deleted => arriendo.nropedido), :class=>"btn btn-primary btn-2" %></td>
+    105:                       <!-- <td><%= link_to 'Eliminar Arriendo', arriendo, method: :delete, data: { confirm: 'Seguro?' }, :class=>"btn btn-primary btn-4" %></td> -->
+    106:                     </tr>
+    107:                     <% @repeat.push(arriendo.nropedido) %>
+  
+app/views/arriendos/index.html.erb:104:in `block in _app_views_arriendos_index_html_erb___1296282639198104911_47124378369680'
+app/views/arriendos/index.html.erb:94:in `_app_views_arriendos_index_html_erb___1296282639198104911_47124378369680'
+  Rendering /home/alejandro/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /home/alejandro/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/alejandro/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (19.2ms)
+  Rendering /home/alejandro/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/alejandro/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (8.3ms)
+  Rendering /home/alejandro/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/alejandro/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /home/alejandro/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (94.1ms)
+Started GET "/arriendos" for 127.0.0.1 at 2018-07-31 19:27:37 -0400
+Processing by ArriendosController#index as HTML
+  Rendering arriendos/index.html.erb within layouts/application
+  [1m[36mUser Load (3.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+  [1m[36mArriendo Load (0.6ms)[0m  [1m[34mSELECT "arriendos".* FROM "arriendos" ORDER BY fecha[0m
+  Rendered arriendos/index.html.erb within layouts/application (25.4ms)
+Completed 500 Internal Server Error in 37ms (ActiveRecord: 4.4ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"checkins", :deleted=>"1529438384A1"} missing required keys: [:id]):
+    101:                       <td><%= arriendo.user_id %></td>
+    102:                       <td><%= link_to 'Ver Arriendo', arriendo_path(arriendo), :class=>"btn btn-primary btn-3" %></td>
+    103:                       <td><%= link_to 'Hacer Check In', edit_arriendo_path(arriendo), :class=>"btn btn-primary btn-3" %></td>
+    104:                       <!-- <td><%= link_to 'Eliminar Arriendo', checkin_path(:deleted => arriendo.nropedido), :class=>"btn btn-primary btn-2" %></td> -->
+    105:                       <td><%= link_to 'Eliminar Arriendo', arriendo, :method => :delete, data: { confirm: 'Seguro?' }, :class=>"btn btn-primary btn-4" %></td>
+    106:                     </tr>
+    107:                     <% @repeat.push(arriendo.nropedido) %>
+  
+app/views/arriendos/index.html.erb:104:in `block in _app_views_arriendos_index_html_erb___1296282639198104911_47124379520360'
+app/views/arriendos/index.html.erb:94:in `_app_views_arriendos_index_html_erb___1296282639198104911_47124379520360'
+  Rendering /home/alejandro/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /home/alejandro/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/alejandro/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (14.7ms)
+  Rendering /home/alejandro/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/alejandro/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (31.2ms)
+  Rendering /home/alejandro/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/alejandro/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/alejandro/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (111.5ms)
+Started GET "/equipos" for 127.0.0.1 at 2018-07-31 19:27:43 -0400
+Processing by EquiposController#index as HTML
+  Rendering equipos/index.html.erb within layouts/application
+  [1m[36mEquipo Load (2.1ms)[0m  [1m[34mSELECT "equipos".* FROM "equipos" ORDER BY price DESC[0m
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+  Rendered equipos/index.html.erb within layouts/application (378.2ms)
+Completed 200 OK in 543ms (Views: 521.3ms | ActiveRecord: 10.5ms)
+
+
+Started GET "/arriendos" for 127.0.0.1 at 2018-07-31 19:27:44 -0400
+Processing by ArriendosController#index as HTML
+  Rendering arriendos/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+  [1m[36mArriendo Load (4.7ms)[0m  [1m[34mSELECT "arriendos".* FROM "arriendos" ORDER BY fecha[0m
+  Rendered arriendos/index.html.erb within layouts/application (22.7ms)
+Completed 500 Internal Server Error in 46ms (ActiveRecord: 5.2ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"checkins", :deleted=>"1529438384A1"} missing required keys: [:id]):
+    101:                       <td><%= arriendo.user_id %></td>
+    102:                       <td><%= link_to 'Ver Arriendo', arriendo_path(arriendo), :class=>"btn btn-primary btn-3" %></td>
+    103:                       <td><%= link_to 'Hacer Check In', edit_arriendo_path(arriendo), :class=>"btn btn-primary btn-3" %></td>
+    104:                       <!-- <td><%= link_to 'Eliminar Arriendo', checkin_path(:deleted => arriendo.nropedido), :class=>"btn btn-primary btn-2" %></td> -->
+    105:                       <td><%= link_to 'Eliminar Arriendo', arriendo, :method => :delete, data: { confirm: 'Seguro?' }, :class=>"btn btn-primary btn-4" %></td>
+    106:                     </tr>
+    107:                     <% @repeat.push(arriendo.nropedido) %>
+  
+app/views/arriendos/index.html.erb:104:in `block in _app_views_arriendos_index_html_erb___1296282639198104911_70303123604520'
+app/views/arriendos/index.html.erb:94:in `_app_views_arriendos_index_html_erb___1296282639198104911_70303123604520'
+  Rendering /home/alejandro/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /home/alejandro/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/alejandro/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (11.3ms)
+  Rendering /home/alejandro/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/alejandro/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.4ms)
+  Rendering /home/alejandro/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/alejandro/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/alejandro/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (80.3ms)
+Started GET "/arriendos" for 127.0.0.1 at 2018-07-31 19:28:38 -0400
+Processing by ArriendosController#index as HTML
+  Rendering arriendos/index.html.erb within layouts/application
+  [1m[36mUser Load (3.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+  [1m[36mArriendo Load (5.7ms)[0m  [1m[34mSELECT "arriendos".* FROM "arriendos" ORDER BY fecha[0m
+  Rendered arriendos/index.html.erb within layouts/application (35.2ms)
+Completed 200 OK in 55ms (Views: 40.3ms | ActiveRecord: 9.2ms)
+
+
+Started GET "/arriendos/41" for 127.0.0.1 at 2018-07-31 19:29:20 -0400
+Processing by ArriendosController#show as HTML
+  Parameters: {"id"=>"41"}
+  [1m[36mArriendo Load (1.7ms)[0m  [1m[34mSELECT  "arriendos".* FROM "arriendos" WHERE "arriendos"."id" = $1 LIMIT $2[0m  [["id", 41], ["LIMIT", 1]]
+  Rendering arriendos/show.html.erb within layouts/application
+  [1m[36mArriendo Load (0.5ms)[0m  [1m[34mSELECT "arriendos".* FROM "arriendos"[0m
+  [1m[36mEquipo Load (0.3ms)[0m  [1m[34mSELECT  "equipos".* FROM "equipos" WHERE "equipos"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "equipos".* FROM "equipos" WHERE "equipos"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mEquipo Load (3.0ms)[0m  [1m[34mSELECT  "equipos".* FROM "equipos" WHERE "equipos"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "equipos".* FROM "equipos" WHERE "equipos"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered arriendos/show.html.erb within layouts/application (33.7ms)
+  [1m[36mUser Load (4.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+Completed 200 OK in 92ms (Views: 65.7ms | ActiveRecord: 11.7ms)
+
+
+Started GET "/arriendos" for 127.0.0.1 at 2018-07-31 19:29:25 -0400
+Processing by ArriendosController#index as HTML
+  Rendering arriendos/index.html.erb within layouts/application
+  [1m[36mUser Load (14.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+  [1m[36mArriendo Load (3.3ms)[0m  [1m[34mSELECT "arriendos".* FROM "arriendos" ORDER BY fecha[0m
+  Rendered arriendos/index.html.erb within layouts/application (73.4ms)
+Completed 200 OK in 99ms (Views: 76.5ms | ActiveRecord: 17.6ms)
+
+
+Started GET "/arriendos/37" for 127.0.0.1 at 2018-07-31 19:32:04 -0400
+Processing by ArriendosController#show as HTML
+  Parameters: {"id"=>"37"}
+  [1m[36mArriendo Load (2.4ms)[0m  [1m[34mSELECT  "arriendos".* FROM "arriendos" WHERE "arriendos"."id" = $1 LIMIT $2[0m  [["id", 37], ["LIMIT", 1]]
+  Rendering arriendos/show.html.erb within layouts/application
+  [1m[36mArriendo Load (5.4ms)[0m  [1m[34mSELECT "arriendos".* FROM "arriendos"[0m
+  [1m[36mEquipo Load (1.4ms)[0m  [1m[34mSELECT  "equipos".* FROM "equipos" WHERE "equipos"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "equipos".* FROM "equipos" WHERE "equipos"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered arriendos/show.html.erb within layouts/application (19.4ms)
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+Completed 200 OK in 74ms (Views: 52.6ms | ActiveRecord: 10.5ms)
+
+
+Started GET "/arriendos" for 127.0.0.1 at 2018-07-31 19:32:18 -0400
+Processing by ArriendosController#index as HTML
+  Rendering arriendos/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+  [1m[36mArriendo Load (0.5ms)[0m  [1m[34mSELECT "arriendos".* FROM "arriendos" ORDER BY fecha[0m
+  Rendered arriendos/index.html.erb within layouts/application (33.1ms)
+Completed 200 OK in 55ms (Views: 48.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/checkins?deleted=1529438384A1" for 127.0.0.1 at 2018-07-31 19:32:20 -0400
+Processing by CheckinsController#index as HTML
+  Parameters: {"deleted"=>"1529438384A1"}
+  Rendering checkins/index.html.erb within layouts/application
+  [1m[36mArriendo Load (3.0ms)[0m  [1m[34mSELECT "arriendos".* FROM "arriendos" WHERE "arriendos"."nropedido" = $1[0m  [["nropedido", "deleted"]]
+  Rendered checkins/index.html.erb within layouts/application (21.0ms)
+Completed 500 Internal Server Error in 50ms (ActiveRecord: 3.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `nropedido' for #<ActiveRecord::Relation []>):
+    2: <h1>Deleted</h1>
+    3: <%= :deleted %>
+    4: <% arriendo = Arriendo.where(nropedido: :deleted)%>
+    5: <%= arriendo.nropedido%>
+  
+app/views/checkins/index.html.erb:5:in `_app_views_checkins_index_html_erb___1301574472034279859_70303014372400'
+  Rendering /home/alejandro/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /home/alejandro/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/alejandro/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (16.4ms)
+  Rendering /home/alejandro/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/alejandro/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendering /home/alejandro/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/alejandro/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/alejandro/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (88.3ms)
+Started GET "/checkins?deleted=1529438384A1" for 127.0.0.1 at 2018-07-31 19:33:33 -0400
+Processing by CheckinsController#index as HTML
+  Parameters: {"deleted"=>"1529438384A1"}
+  Rendering checkins/index.html.erb within layouts/application
+  [1m[36mArriendo Load (2.2ms)[0m  [1m[34mSELECT "arriendos".* FROM "arriendos" WHERE "arriendos"."nropedido" = $1[0m  [["nropedido", "deleted"]]
+  Rendered checkins/index.html.erb within layouts/application (18.5ms)
+Completed 500 Internal Server Error in 50ms (ActiveRecord: 2.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `nropedido' for #<ActiveRecord::Relation []>):
+    2: <h1>Deleted</h1>
+    3: <%= :deleted %>
+    4: <% arriendo = Arriendo.where(nropedido: :deleted).all%>
+    5: <%= arriendo.nropedido%>
+  
+app/views/checkins/index.html.erb:5:in `_app_views_checkins_index_html_erb___1301574472034279859_70303149377000'
+  Rendering /home/alejandro/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /home/alejandro/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/alejandro/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (10.1ms)
+  Rendering /home/alejandro/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/alejandro/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.6ms)
+  Rendering /home/alejandro/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/alejandro/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/alejandro/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (102.2ms)
+Started GET "/checkins?deleted=1529438384A1" for 127.0.0.1 at 2018-07-31 19:35:23 -0400
+Processing by CheckinsController#index as HTML
+  Parameters: {"deleted"=>"1529438384A1"}
+  Rendering checkins/index.html.erb within layouts/application
+  [1m[36mArriendo Load (1.4ms)[0m  [1m[34mSELECT "arriendos".* FROM "arriendos" WHERE "arriendos"."nropedido" = $1[0m  [["nropedido", "deleted"]]
+  Rendered checkins/index.html.erb within layouts/application (11.7ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+Completed 200 OK in 43ms (Views: 40.3ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/checkins?deleted=1529438384A1" for 127.0.0.1 at 2018-07-31 19:35:38 -0400
+Processing by CheckinsController#index as HTML
+  Parameters: {"deleted"=>"1529438384A1"}
+  Rendering checkins/index.html.erb within layouts/application
+  [1m[36mArriendo Load (3.4ms)[0m  [1m[34mSELECT "arriendos".* FROM "arriendos" WHERE "arriendos"."nropedido" = $1[0m  [["nropedido", "deleted"]]
+  Rendered checkins/index.html.erb within layouts/application (6.0ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+Completed 200 OK in 53ms (Views: 47.0ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/checkins?deleted=1529438384A1" for 127.0.0.1 at 2018-07-31 19:35:41 -0400
+Processing by CheckinsController#index as HTML
+  Parameters: {"deleted"=>"1529438384A1"}
+  Rendering checkins/index.html.erb within layouts/application
+  [1m[36mArriendo Load (11.2ms)[0m  [1m[34mSELECT "arriendos".* FROM "arriendos" WHERE "arriendos"."nropedido" = $1[0m  [["nropedido", "deleted"]]
+  Rendered checkins/index.html.erb within layouts/application (18.0ms)
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+Completed 200 OK in 74ms (Views: 59.6ms | ActiveRecord: 12.8ms)
+
+
+Started GET "/arriendos" for 127.0.0.1 at 2018-07-31 19:38:06 -0400
+Processing by ArriendosController#index as HTML
+  Rendering arriendos/index.html.erb within layouts/application
+  [1m[36mUser Load (4.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+  [1m[36mArriendo Load (0.6ms)[0m  [1m[34mSELECT "arriendos".* FROM "arriendos" ORDER BY fecha[0m
+  Rendered arriendos/index.html.erb within layouts/application (25.1ms)
+Completed 200 OK in 52ms (Views: 46.0ms | ActiveRecord: 4.8ms)
+
+
+Started GET "/checkins?deleted=41" for 127.0.0.1 at 2018-07-31 19:38:08 -0400
+Processing by CheckinsController#index as HTML
+  Parameters: {"deleted"=>"41"}
+  Rendering checkins/index.html.erb within layouts/application
+  [1m[36mArriendo Load (2.0ms)[0m  [1m[34mSELECT "arriendos".* FROM "arriendos" WHERE "arriendos"."nropedido" = $1[0m  [["nropedido", "deleted"]]
+  Rendered checkins/index.html.erb within layouts/application (11.2ms)
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+Completed 200 OK in 54ms (Views: 48.8ms | ActiveRecord: 4.4ms)
+
+
+Started GET "/checkins?deleted=37" for 127.0.0.1 at 2018-07-31 19:39:26 -0400
+Processing by CheckinsController#index as HTML
+  Parameters: {"deleted"=>"37"}
+  Rendering checkins/index.html.erb within layouts/application
+  [1m[36mArriendo Load (0.4ms)[0m  [1m[34mSELECT "arriendos".* FROM "arriendos" WHERE "arriendos"."nropedido" = $1[0m  [["nropedido", "deleted"]]
+  Rendered checkins/index.html.erb within layouts/application (2.5ms)
+  [1m[36mUser Load (4.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+Completed 200 OK in 55ms (Views: 48.1ms | ActiveRecord: 5.2ms)
+
+
+Started GET "/arriendos" for 127.0.0.1 at 2018-07-31 20:08:27 -0400
+Processing by ArriendosController#index as HTML
+  Rendering arriendos/index.html.erb within layouts/application
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+  [1m[36mArriendo Load (1.4ms)[0m  [1m[34mSELECT "arriendos".* FROM "arriendos" ORDER BY fecha[0m
+  Rendered arriendos/index.html.erb within layouts/application (27.9ms)
+Completed 200 OK in 55ms (Views: 45.5ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/checkins?deleted=1529438384A1" for 127.0.0.1 at 2018-07-31 20:08:29 -0400
+Processing by CheckinsController#index as HTML
+  Parameters: {"deleted"=>"1529438384A1"}
+  Rendering checkins/index.html.erb within layouts/application
+  [1m[36mArriendo Load (3.2ms)[0m  [1m[34mSELECT "arriendos".* FROM "arriendos" WHERE "arriendos"."nropedido" = $1[0m  [["nropedido", "deleted"]]
+  Rendered checkins/index.html.erb within layouts/application (9.2ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+Completed 200 OK in 33ms (Views: 27.9ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/checkins?deleted=1529438287A1" for 127.0.0.1 at 2018-07-31 20:08:35 -0400
+Processing by CheckinsController#index as HTML
+  Parameters: {"deleted"=>"1529438287A1"}
+  Rendering checkins/index.html.erb within layouts/application
+  [1m[36mArriendo Load (0.4ms)[0m  [1m[34mSELECT "arriendos".* FROM "arriendos" WHERE "arriendos"."nropedido" = $1[0m  [["nropedido", "deleted"]]
+  Rendered checkins/index.html.erb within layouts/application (3.3ms)
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+Completed 200 OK in 32ms (Views: 28.5ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-31 20:09:01 -0400
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  [1m[36mHome Load (8.1ms)[0m  [1m[34mSELECT "homes".* FROM "homes"[0m
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "homes"[0m
+  Rendered homes/index.html.erb within layouts/application (40.7ms)
+Completed 200 OK in 90ms (Views: 67.0ms | ActiveRecord: 13.9ms)
+
+
+Started GET "/arriendos" for 127.0.0.1 at 2018-07-31 20:09:02 -0400
+Processing by ArriendosController#index as HTML
+  Rendering arriendos/index.html.erb within layouts/application
+  [1m[36mUser Load (8.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+  [1m[36mArriendo Load (3.2ms)[0m  [1m[34mSELECT "arriendos".* FROM "arriendos" ORDER BY fecha[0m
+  Rendered arriendos/index.html.erb within layouts/application (25.1ms)
+Completed 200 OK in 49ms (Views: 36.1ms | ActiveRecord: 11.4ms)
+
+
+Started GET "/checkins?deleted=1529438384A1" for 127.0.0.1 at 2018-07-31 20:09:04 -0400
+Processing by CheckinsController#index as HTML
+  Parameters: {"deleted"=>"1529438384A1"}
+  Rendering checkins/index.html.erb within layouts/application
+  [1m[36mArriendo Load (0.5ms)[0m  [1m[34mSELECT "arriendos".* FROM "arriendos" WHERE "arriendos"."nropedido" = $1[0m  [["nropedido", "deleted"]]
+  Rendered checkins/index.html.erb within layouts/application (6.7ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+Completed 200 OK in 41ms (Views: 39.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-31 20:13:08 -0400
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  [1m[36mHome Load (3.6ms)[0m  [1m[34mSELECT "homes".* FROM "homes"[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+  [1m[35m (4.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "homes"[0m
+  Rendered homes/index.html.erb within layouts/application (19.4ms)
+Completed 200 OK in 44ms (Views: 31.2ms | ActiveRecord: 8.4ms)
+
+
+Started GET "/arriendos" for 127.0.0.1 at 2018-07-31 20:13:10 -0400
+Processing by ArriendosController#index as HTML
+  Rendering arriendos/index.html.erb within layouts/application
+  [1m[36mUser Load (7.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+  [1m[36mArriendo Load (0.5ms)[0m  [1m[34mSELECT "arriendos".* FROM "arriendos" ORDER BY fecha[0m
+  Rendered arriendos/index.html.erb within layouts/application (28.0ms)
+Completed 200 OK in 62ms (Views: 52.8ms | ActiveRecord: 8.2ms)
+
+
+Started GET "/checkins?deleted=1529438384A1" for 127.0.0.1 at 2018-07-31 20:13:11 -0400
+Processing by CheckinsController#index as HTML
+  Parameters: {"deleted"=>"1529438384A1"}
+  Rendering checkins/index.html.erb within layouts/application
+  [1m[36mArriendo Load (2.4ms)[0m  [1m[34mSELECT "arriendos".* FROM "arriendos" WHERE "arriendos"."nropedido" = $1[0m  [["nropedido", "deleted"]]
+  Rendered checkins/index.html.erb within layouts/application (8.1ms)
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+Completed 200 OK in 45ms (Views: 39.6ms | ActiveRecord: 4.3ms)
+
+
+Started GET "/arriendos" for 127.0.0.1 at 2018-07-31 20:13:24 -0400
+Processing by ArriendosController#index as HTML
+  Rendering arriendos/index.html.erb within layouts/application
+  [1m[36mUser Load (5.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+  [1m[36mArriendo Load (1.0ms)[0m  [1m[34mSELECT "arriendos".* FROM "arriendos" ORDER BY fecha[0m
+  Rendered arriendos/index.html.erb within layouts/application (33.8ms)
+Completed 200 OK in 50ms (Views: 43.1ms | ActiveRecord: 6.1ms)
+
+
+Started GET "/checkins?deleted=1529438384A1" for 127.0.0.1 at 2018-07-31 20:13:25 -0400
+Processing by CheckinsController#index as HTML
+  Parameters: {"deleted"=>"1529438384A1"}
+  Rendering checkins/index.html.erb within layouts/application
+  [1m[36mArriendo Load (1.3ms)[0m  [1m[34mSELECT "arriendos".* FROM "arriendos" WHERE "arriendos"."nropedido" = $1[0m  [["nropedido", "deleted"]]
+  Rendered checkins/index.html.erb within layouts/application (7.2ms)
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+Completed 200 OK in 45ms (Views: 40.5ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/arriendos" for 127.0.0.1 at 2018-07-31 20:24:28 -0400
+Processing by ArriendosController#index as HTML
+  Rendering arriendos/index.html.erb within layouts/application
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+  [1m[36mArriendo Load (1.2ms)[0m  [1m[34mSELECT "arriendos".* FROM "arriendos" ORDER BY fecha[0m
+  Rendered arriendos/index.html.erb within layouts/application (27.6ms)
+Completed 200 OK in 81ms (Views: 72.2ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/checkins?deleted=41" for 127.0.0.1 at 2018-07-31 20:24:30 -0400
+Processing by CheckinsController#index as HTML
+  Parameters: {"deleted"=>"41"}
+  Rendering checkins/index.html.erb within layouts/application
+  [1m[36mArriendo Load (3.8ms)[0m  [1m[34mSELECT "arriendos".* FROM "arriendos" WHERE "arriendos"."nropedido" = $1[0m  [["nropedido", "deleted"]]
+  Rendered checkins/index.html.erb within layouts/application (6.5ms)
+  [1m[36mUser Load (3.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+Completed 200 OK in 46ms (Views: 32.8ms | ActiveRecord: 7.1ms)
+
+
+Started GET "/arriendos" for 127.0.0.1 at 2018-07-31 20:24:42 -0400
+Processing by ArriendosController#index as HTML
+  Rendering arriendos/index.html.erb within layouts/application
+  [1m[36mUser Load (5.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+  [1m[36mArriendo Load (2.2ms)[0m  [1m[34mSELECT "arriendos".* FROM "arriendos" ORDER BY fecha[0m
+  Rendered arriendos/index.html.erb within layouts/application (31.6ms)
+Completed 200 OK in 77ms (Views: 67.6ms | ActiveRecord: 7.2ms)
+
+
+Started GET "/checkins?deleted=41" for 127.0.0.1 at 2018-07-31 20:24:44 -0400
+Processing by CheckinsController#index as HTML
+  Parameters: {"deleted"=>"41"}
+  Rendering checkins/index.html.erb within layouts/application
+  [1m[36mArriendo Load (1.5ms)[0m  [1m[34mSELECT "arriendos".* FROM "arriendos" WHERE "arriendos"."nropedido" = $1[0m  [["nropedido", "deleted"]]
+  Rendered checkins/index.html.erb within layouts/application (7.4ms)
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+Completed 200 OK in 48ms (Views: 41.7ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/arriendos" for 127.0.0.1 at 2018-07-31 20:27:16 -0400
+Processing by ArriendosController#index as HTML
+  Rendering arriendos/index.html.erb within layouts/application
+  [1m[36mUser Load (4.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+  [1m[36mArriendo Load (10.1ms)[0m  [1m[34mSELECT "arriendos".* FROM "arriendos" ORDER BY fecha[0m
+  Rendered arriendos/index.html.erb within layouts/application (33.8ms)
+Completed 500 Internal Server Error in 68ms (ActiveRecord: 14.7ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"arriendos", :deleted=>#<Arriendo id: 41, talla: 0, altura: 0, edad: 0, peso: 0, nombre: "", apellidop: "", apellidom: "", nropedido: "1529438384A1", cantidad: 2, user_id: 19, equipo_id: 2, created_at: "2018-06-19 20:00:04", updated_at: "2018-06-19 20:00:04", email: nil, fecha: "2019-02-02", dias: 1, experience: 1, talla_parka: 0, talla_pantalon: 0, endof: nil>} missing required keys: [:id]):
+    101:                       <td><%= arriendo.user_id %></td>
+    102:                       <td><%= link_to 'Ver Arriendo', arriendo_path(arriendo), :class=>"btn btn-primary btn-3" %></td>
+    103:                       <td><%= link_to 'Hacer Check In', edit_arriendo_path(arriendo), :class=>"btn btn-primary btn-3" %></td>
+    104:                       <td><%= link_to 'Eliminar Arriendo', arriendo_path(:deleted => arriendo), :class=>"btn btn-primary btn-4" %></td>
+    105:                       <!-- <td><%= link_to 'Eliminar Arriendo', arriendo, :method => :delete, data: { confirm: 'Seguro?' }, :class=>"btn btn-primary btn-4" %></td> -->
+    106:                     </tr>
+    107:                     <% @repeat.push(arriendo.nropedido) %>
+  
+app/views/arriendos/index.html.erb:104:in `block in _app_views_arriendos_index_html_erb___1296282639198104911_70303117615780'
+app/views/arriendos/index.html.erb:94:in `_app_views_arriendos_index_html_erb___1296282639198104911_70303117615780'
+  Rendering /home/alejandro/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /home/alejandro/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/alejandro/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.5ms)
+  Rendering /home/alejandro/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/alejandro/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendering /home/alejandro/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/alejandro/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/alejandro/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (90.1ms)
+Started GET "/arriendos" for 127.0.0.1 at 2018-07-31 20:27:33 -0400
+Processing by ArriendosController#index as HTML
+  Rendering arriendos/index.html.erb within layouts/application
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+  [1m[36mArriendo Load (3.6ms)[0m  [1m[34mSELECT "arriendos".* FROM "arriendos" ORDER BY fecha[0m
+  Rendered arriendos/index.html.erb within layouts/application (26.3ms)
+Completed 200 OK in 50ms (Views: 42.2ms | ActiveRecord: 6.0ms)
+
+
+Started GET "/arriendos/41" for 127.0.0.1 at 2018-07-31 20:27:34 -0400
+Processing by ArriendosController#show as HTML
+  Parameters: {"id"=>"41"}
+  [1m[36mArriendo Load (1.5ms)[0m  [1m[34mSELECT  "arriendos".* FROM "arriendos" WHERE "arriendos"."id" = $1 LIMIT $2[0m  [["id", 41], ["LIMIT", 1]]
+  Rendering arriendos/show.html.erb within layouts/application
+  [1m[36mArriendo Load (8.9ms)[0m  [1m[34mSELECT "arriendos".* FROM "arriendos"[0m
+  [1m[36mEquipo Load (6.7ms)[0m  [1m[34mSELECT  "equipos".* FROM "equipos" WHERE "equipos"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "equipos".* FROM "equipos" WHERE "equipos"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mEquipo Load (0.3ms)[0m  [1m[34mSELECT  "equipos".* FROM "equipos" WHERE "equipos"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "equipos".* FROM "equipos" WHERE "equipos"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered arriendos/show.html.erb within layouts/application (35.4ms)
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+Completed 200 OK in 71ms (Views: 43.6ms | ActiveRecord: 19.2ms)
+
+
+Started GET "/arriendos" for 127.0.0.1 at 2018-07-31 20:28:17 -0400
+Processing by ArriendosController#index as HTML
+  Rendering arriendos/index.html.erb within layouts/application
+  Rendered arriendos/index.html.erb within layouts/application (3.0ms)
+Completed 500 Internal Server Error in 31ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/alejandro/Downloads/skirental/app/views/arriendos/index.html.erb:104: syntax error, unexpected '=', expecting ')'
+endo_path(arriendo, :deleted = "deleted"), :class=>"btn btn-
+                              ^
+/home/alejandro/Downloads/skirental/app/views/arriendos/index.html.erb:104: syntax error, unexpected =>, expecting keyword_end
+deleted = "deleted"), :class=>"btn btn-primary btn-4" );@out
+                              ^
+/home/alejandro/Downloads/skirental/app/views/arriendos/index.html.erb:104: syntax error, unexpected ')', expecting keyword_end
+ass=>"btn btn-primary btn-4" );@output_buffer.safe_append='<
+                              ^):
+  
+app/views/arriendos/index.html.erb:104: syntax error, unexpected '=', expecting ')'
+app/views/arriendos/index.html.erb:104: syntax error, unexpected =>, expecting keyword_end
+app/views/arriendos/index.html.erb:104: syntax error, unexpected ')', expecting keyword_end
+  Rendering /home/alejandro/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/alejandro/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/alejandro/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (22.8ms)
+  Rendering /home/alejandro/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/alejandro/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (7.9ms)
+  Rendering /home/alejandro/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/alejandro/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (4.7ms)
+  Rendered /home/alejandro/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (124.2ms)
+Started GET "/arriendos" for 127.0.0.1 at 2018-07-31 20:31:31 -0400
+Processing by ArriendosController#index as HTML
+  Rendering arriendos/index.html.erb within layouts/application
+  [1m[36mUser Load (4.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+  [1m[36mArriendo Load (0.7ms)[0m  [1m[34mSELECT "arriendos".* FROM "arriendos" ORDER BY fecha[0m
+  Rendered arriendos/index.html.erb within layouts/application (37.9ms)
+Completed 200 OK in 67ms (Views: 61.4ms | ActiveRecord: 4.8ms)
+
+
+Started GET "/arriendos/41?deleted=deleted" for 127.0.0.1 at 2018-07-31 20:31:47 -0400
+Processing by ArriendosController#show as HTML
+  Parameters: {"deleted"=>"deleted", "id"=>"41"}
+  [1m[36mArriendo Load (3.8ms)[0m  [1m[34mSELECT  "arriendos".* FROM "arriendos" WHERE "arriendos"."id" = $1 LIMIT $2[0m  [["id", 41], ["LIMIT", 1]]
+  Rendering arriendos/show.html.erb within layouts/application
+  [1m[36mArriendo Load (5.8ms)[0m  [1m[34mSELECT "arriendos".* FROM "arriendos"[0m
+  [1m[36mEquipo Load (0.6ms)[0m  [1m[34mSELECT  "equipos".* FROM "equipos" WHERE "equipos"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "equipos".* FROM "equipos" WHERE "equipos"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mEquipo Load (2.7ms)[0m  [1m[34mSELECT  "equipos".* FROM "equipos" WHERE "equipos"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "equipos".* FROM "equipos" WHERE "equipos"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered arriendos/show.html.erb within layouts/application (31.5ms)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+Completed 200 OK in 92ms (Views: 69.1ms | ActiveRecord: 13.6ms)
+
+
+Started GET "/arriendos" for 127.0.0.1 at 2018-07-31 20:53:17 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (5.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/alejandro/Downloads/skirental/app/controllers/application_controller.rb:4)
+Processing by ArriendosController#index as HTML
+  Rendering arriendos/index.html.erb within layouts/application
+  [1m[36mUser Load (6.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+  [1m[36mArriendo Load (3.7ms)[0m  [1m[34mSELECT "arriendos".* FROM "arriendos" ORDER BY fecha[0m
+  Rendered arriendos/index.html.erb within layouts/application (143.5ms)
+Completed 200 OK in 644ms (Views: 581.4ms | ActiveRecord: 17.5ms)
+
+
+Started GET "/arriendos/37?deleted=deleted" for 127.0.0.1 at 2018-07-31 20:53:21 -0400
+Processing by ArriendosController#show as HTML
+  Parameters: {"deleted"=>"deleted", "id"=>"37"}
+  [1m[36mArriendo Load (0.2ms)[0m  [1m[34mSELECT  "arriendos".* FROM "arriendos" WHERE "arriendos"."id" = $1 LIMIT $2[0m  [["id", 37], ["LIMIT", 1]]
+  Rendering arriendos/show.html.erb within layouts/application
+  [1m[36mArriendo Load (0.5ms)[0m  [1m[34mSELECT "arriendos".* FROM "arriendos"[0m
+  [1m[36mEquipo Load (0.5ms)[0m  [1m[34mSELECT  "equipos".* FROM "equipos" WHERE "equipos"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "equipos".* FROM "equipos" WHERE "equipos"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered arriendos/show.html.erb within layouts/application (54.7ms)
+  [1m[36mUser Load (9.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+Completed 200 OK in 99ms (Views: 72.7ms | ActiveRecord: 18.1ms)
+
+
+Started GET "/arriendos" for 127.0.0.1 at 2018-07-31 20:53:43 -0400
+Processing by ArriendosController#index as HTML
+  Rendering arriendos/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+  [1m[36mArriendo Load (0.5ms)[0m  [1m[34mSELECT "arriendos".* FROM "arriendos" ORDER BY fecha[0m
+  Rendered arriendos/index.html.erb within layouts/application (60.4ms)
+Completed 200 OK in 77ms (Views: 72.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/arriendos/37?deleted=deleted" for 127.0.0.1 at 2018-07-31 20:53:46 -0400
+Processing by ArriendosController#show as HTML
+  Parameters: {"deleted"=>"deleted", "id"=>"37"}
+  [1m[36mArriendo Load (5.4ms)[0m  [1m[34mSELECT  "arriendos".* FROM "arriendos" WHERE "arriendos"."id" = $1 LIMIT $2[0m  [["id", 37], ["LIMIT", 1]]
+  Rendering arriendos/show.html.erb within layouts/application
+  [1m[36mArriendo Load (4.3ms)[0m  [1m[34mSELECT "arriendos".* FROM "arriendos"[0m
+  [1m[36mEquipo Load (5.8ms)[0m  [1m[34mSELECT  "equipos".* FROM "equipos" WHERE "equipos"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (7.1ms)[0m  [1m[31mDELETE FROM "arriendos" WHERE "arriendos"."id" = $1[0m  [["id", 36]]
+  [1m[35m (4.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mEquipo Load (0.9ms)[0m  [1m[34mSELECT  "equipos".* FROM "equipos" WHERE "equipos"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "arriendos" WHERE "arriendos"."id" = $1[0m  [["id", 37]]
+  [1m[35m (3.1ms)[0m  [1m[35mCOMMIT[0m
+  Rendered arriendos/show.html.erb within layouts/application (41.4ms)
+  [1m[36mUser Load (4.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+Completed 200 OK in 108ms (Views: 62.1ms | ActiveRecord: 35.7ms)
+
+
+Started GET "/arriendos" for 127.0.0.1 at 2018-07-31 20:53:52 -0400
+Processing by ArriendosController#index as HTML
+  Rendering arriendos/index.html.erb within layouts/application
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+  [1m[36mArriendo Load (0.5ms)[0m  [1m[34mSELECT "arriendos".* FROM "arriendos" ORDER BY fecha[0m
+  Rendered arriendos/index.html.erb within layouts/application (45.9ms)
+Completed 200 OK in 75ms (Views: 67.1ms | ActiveRecord: 3.0ms)
+
+
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT pg_try_advisory_lock(150662671610792250);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddDocumentToUsers (20180801010556)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (12.1ms)[0m  [1m[35mALTER TABLE "users" ADD "document" character varying[0m
+  [1m[35mSQL (1.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20180801010556"]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddDocumentToArriendos (20180801010809)
+  [1m[35m (3.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (3.6ms)[0m  [1m[35mALTER TABLE "arriendos" ADD "document" character varying[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20180801010809"]]
+  [1m[35m (2.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (2.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (3.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(150662671610792250)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (2.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Started GET "/" for 127.0.0.1 at 2018-08-02 02:05:19 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (2.9ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/alejandro/Downloads/skirental/app/controllers/application_controller.rb:4)
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  [1m[36mHome Load (0.4ms)[0m  [1m[34mSELECT "homes".* FROM "homes"[0m
+  [1m[36mUser Load (3.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+  [1m[35m (8.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "homes"[0m
+  Rendered homes/index.html.erb within layouts/application (174.3ms)
+Completed 200 OK in 900ms (Views: 842.1ms | ActiveRecord: 25.0ms)
+
+
+Started GET "/users/sign_out" for 127.0.0.1 at 2018-08-02 02:05:22 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_out"}
+  [1m[36mUser Load (3.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (6.4ms)[0m  [1m[33mUPDATE "users" SET "remember_created_at" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["remember_created_at", nil], ["updated_at", "2018-08-02 06:05:22.203173"], ["id", 19]]
+  [1m[35m (8.3ms)[0m  [1m[35mCOMMIT[0m
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 87ms (Views: 35.2ms | ActiveRecord: 19.5ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2018-08-02 02:05:25 -0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (7.5ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (78.7ms)
+Completed 200 OK in 109ms (Views: 101.5ms | ActiveRecord: 0.0ms)
+
+

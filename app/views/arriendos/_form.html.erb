@@ -12,6 +12,11 @@
   <% end %>
   <% if user_signed_in? %>
 
+  <div class="field" style="padding-top:8px">
+    <%= f.label 'Documento de identidad' %>
+    <%= f.text_field :document, :value => current_user.document %>
+  </div>
+
     <div class="field" style="padding-top:8px">
       <%= f.label 'Cantidad' %>
       <%= f.number_field :cantidad, :value => 1 %>
@@ -70,6 +75,11 @@
     <div class="field" style="padding-top:8px">
       <%= f.label :email %>
       <%= f.email_field :email, :required => true %>
+    </div>
+
+    <div class="field" style="padding-top:8px">
+      <%= f.label 'Documento de identidad' %>
+      <%= f.text_field :document %>
     </div>
 
     <div class="field" style="padding-top:8px">

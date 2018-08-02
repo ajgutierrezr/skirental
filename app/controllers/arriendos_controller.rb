@@ -60,6 +60,7 @@ class ArriendosController < ApplicationController
       arriendo2.email = @arriendo.email
       arriendo2.dias = @arriendo.dias
       arriendo2.experience = @arriendo.experience
+      arriendo2.document = @arriendo.document
       arriendo2.save
     end
 
@@ -82,7 +83,9 @@ class ArriendosController < ApplicationController
   # DELETE /arriendos/1
   # DELETE /arriendos/1.json
   def destroy
-    @arriendo.destroy
+    Arriendo.where(nropedido: @arriendo.nropedido).each do |eliminado|
+      eliminado.destroy
+    end
     respond_to do |format|
       format.html { redirect_to arriendos_url, notice: 'Arriendo was successfully destroyed.' }
       format.json { head :no_content }
@@ -97,6 +100,6 @@ class ArriendosController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def arriendo_params
-      params.require(:arriendo).permit(:talla, :talla_parka, :talla_pantalon, :altura, :nac, :peso, :nombre, :apellidop, :apellidom, :nropedido, :cantidad, :user_id, :equipo_id, :email, :fecha, :dias, :experience)
+      params.require(:arriendo).permit(:talla, :talla_parka, :talla_pantalon, :document, :altura, :nac, :peso, :nombre, :apellidop, :apellidom, :nropedido, :cantidad, :user_id, :equipo_id, :email, :fecha, :dias, :experience)
     end
 end

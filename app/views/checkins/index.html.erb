@@ -1,3 +1,6 @@
-<p id="notice"><%= notice %></p>
 
-<h1>Pronto...</h1>
+<h1>Deleted</h1>
+<%= :deleted%>
+<% Arriendo.where(nropedido: :deleted).each do |arriendo|%>
+<%= arriendo.nropedido%>
+<% end %>

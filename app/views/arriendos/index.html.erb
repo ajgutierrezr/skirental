@@ -42,7 +42,8 @@
                         <td><%= arriendo.user_id %></td>
                         <td><%= link_to 'Ver Arriendo', arriendo_path(arriendo), :class=>"btn btn-primary btn-2" %></td>
                         <td><%= link_to 'Hacer Check In', edit_arriendo_path(arriendo), :class=>"btn btn-primary btn-2" %></td>
-                        <td><%= link_to 'Eliminar Arriendo', arriendo, method: :delete, data: { confirm: 'Seguro?' }, :class=>"btn btn-primary btn-2" %></td>
+                        <td><%= link_to 'Eliminar Arriendo', checkin_path(:deleted => arriendo.nropedido), :class=>"btn btn-primary btn-4" %></td>
+                        <!-- <td><%= link_to 'Eliminar Arriendo', arriendo_path(arriendo), :method => :delete, data: { confirm: 'Seguro?' }, :class=>"btn btn-primary btn-2" %></td> -->
                       </tr>
                       <% @repeat.push(arriendo.nropedido) %>
                     <% end %>
@@ -100,7 +101,8 @@
                       <td><%= arriendo.user_id %></td>
                       <td><%= link_to 'Ver Arriendo', arriendo_path(arriendo), :class=>"btn btn-primary btn-3" %></td>
                       <td><%= link_to 'Hacer Check In', edit_arriendo_path(arriendo), :class=>"btn btn-primary btn-3" %></td>
-                      <td><%= link_to 'Eliminar Arriendo', arriendo, method: :delete, data: { confirm: 'Seguro?' }, :class=>"btn btn-primary btn-4" %></td>
+                      <td><%= link_to 'Eliminar Arriendo', arriendo_path(arriendo, :deleted => "deleted"), :class=>"btn btn-primary btn-4" %></td>
+                      <!-- <td><%= link_to 'Eliminar Arriendo', arriendo, :method => :delete, data: { confirm: 'Seguro?' }, :class=>"btn btn-primary btn-4" %></td> -->
                     </tr>
                     <% @repeat.push(arriendo.nropedido) %>
                   <% end %>
